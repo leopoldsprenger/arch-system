@@ -1,0 +1,11 @@
+# Archivist: never commit transient data, plaintext secrets or private identities.
+*.tmp
+.archivist-tmp-*
+.archivist/
+*.log
+# Decrypted secrets and local age identities must never be committed.
+secrets/**/*.dec
+secrets/**/*.plain
+*identity*.txt
+keys.txt
+*.age.key

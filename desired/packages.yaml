@@ -1,0 +1,86 @@
+# Desired package policy (user-authored; capture never writes this file).
+# hosts: "*" (default) or a list of hostnames. "except" removes hosts from "*".
+# policy: rolling (default) or pinned (requires version).
+schema_version: 1
+packages:
+  - name: 7zip
+    hosts: '*'
+  - name: age
+    hosts: '*'
+  - name: archlinuxarm-keyring
+    hosts: '*'
+  - name: awww
+    hosts: '*'
+  - name: base
+    hosts: '*'
+  - name: base-devel
+    hosts: '*'
+  - name: btop
+    hosts: '*'
+  - name: cliphist
+    hosts: '*'
+  - name: efibootmgr
+    hosts: '*'
+  - name: fastfetch
+    hosts: '*'
+  - name: fd
+    hosts: '*'
+  - name: firefox
+    hosts: '*'
+  - name: foot
+    hosts: '*'
+  - name: fzf
+    hosts: '*'
+  - name: git
+    hosts: '*'
+  - name: github-cli
+    hosts: '*'
+  - name: go
+    hosts: '*'
+  - name: grub
+    hosts: '*'
+  - name: jq
+    hosts: '*'
+  - name: linux-aarch64
+    hosts: '*'
+  - name: linux-firmware
+    hosts: '*'
+  - name: ly
+    hosts: '*'
+  - name: man-db
+    hosts: '*'
+  - name: mangowm
+    hosts: '*'
+  - name: matugen
+    hosts: '*'
+  - name: networkmanager
+    hosts: '*'
+  - name: otf-geist-mono-nerd
+    hosts: '*'
+  - name: poppler
+    hosts: '*'
+  - name: ripgrep
+    hosts: '*'
+  - name: sops
+    hosts: '*'
+  - name: tree
+    hosts: '*'
+  - name: vim
+    hosts: '*'
+  - name: wl-clipboard
+    hosts: '*'
+  - name: wlr-randr
+    hosts: '*'
+  - name: yazi
+    hosts: '*'
+  - name: zoxide
+    hosts: '*'
+  - name: archivist
+    hosts: '*'
+    source: aur
+  - name: bibata-cursor-theme
+    hosts: '*'
+    source: aur
+  - name: paru
+    hosts: '*'
+    source: aur

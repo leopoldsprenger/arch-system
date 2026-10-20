@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if [[ $# -ne 1 ]]; then
+    echo "Usage: wallpaper /path/to/image" >&2
+    exit 1
+fi
+
+image="$(realpath "$1")"
+
+if [[ ! -f "$image" ]]; then
+    echo "Wallpaper not found: $image" >&2
+    exit 1
+fi
+
+# Set the wallpaper first.
+awww img "$image"
+
+# Generate the Material You palette and btop theme.
+matugen image "$image" \
+    -m dark \
+    --source-color-index 0 \
+    --type scheme-tonal-spot

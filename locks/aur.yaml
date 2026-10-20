@@ -1,0 +1,14 @@
+schema_version: 1
+packages:
+  - name: bibata-cursor-theme
+    version: 2.0.7-1
+    pkgbase: bibata-cursor-theme
+    commit: 8b38756aa61bc7c782e41e117523c32ed6fdf57b
+    pkgbuild_sha256: 4870f39838111f688010dbe2ffafd8224b9a5b95c6522898cd2c18253d5cf081
+    sources:
+      - bibata-cursor-theme-2.0.7.tar.gz::https://github.com/ful1e5/Bibata_Cursor/archive/v2.0.7.tar.gz
+      - bibata-cursor-theme-2.0.7-bitmaps.zip::https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/bitmaps.zip
+    checksums:
+      sha256sums:
+        - 1f21e5cade53d668476f973bd8ec827882a0e32c38e0e766abf007f8b3b46313
+        - 87898034589777e77bfa610ed42e6663a6ba57bb91116d296f800199c1bb9183

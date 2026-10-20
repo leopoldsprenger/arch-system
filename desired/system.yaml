@@ -1,0 +1,4 @@
+schema_version: 1
+settings:
+  - {kind: timezone, value: Europe/Berlin}
+  - {kind: locale, value: en_US.UTF-8}

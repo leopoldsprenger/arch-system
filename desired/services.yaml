@@ -1,0 +1,5 @@
+# Desired systemd units to ENABLE (enabled != running; Archivist never starts, disables or masks units).
+schema_version: 1
+services:
+  - name: NetworkManager.service
+    hosts: '*'

@@ -1,0 +1,66 @@
+schema_version: 1
+host: macbook-vm
+packages:
+  - name: archivist
+    version: 0.2.0-1
+    aur_url: https://aur.archlinux.org/packages/archivist
+    upstream_url: https://example.invalid/archivist
+    packager: Unknown Packager
+    build_date: Tue Oct 20 18:39:08 2026
+    provenance: partial
+    note: no local AUR-helper clone found (cache cleaned or not built with paru); only pacman metadata recorded
+  - name: bibata-cursor-theme
+    version: 2.0.7-1
+    pkgbase: bibata-cursor-theme
+    aur_url: https://aur.archlinux.org/packages/bibata-cursor-theme
+    upstream_url: https://github.com/ful1e5/Bibata_Cursor
+    packager: Unknown Packager
+    build_date: Tue Oct 20 11:43:30 2026
+    commit: 8b38756aa61bc7c782e41e117523c32ed6fdf57b
+    pkgbuild_sha256: 4870f39838111f688010dbe2ffafd8224b9a5b95c6522898cd2c18253d5cf081
+    srcinfo_sha256: 8680d6d90605265ed2ce3d7c3900c26502584178336168d7ec29641172d77b44
+    sources:
+      - bibata-cursor-theme-2.0.7.tar.gz::https://github.com/ful1e5/Bibata_Cursor/archive/v2.0.7.tar.gz
+      - bibata-cursor-theme-2.0.7-bitmaps.zip::https://github.com/ful1e5/Bibata_Cursor/releases/download/v2.0.7/bitmaps.zip
+    checksums:
+      sha256sums:
+        - 1f21e5cade53d668476f973bd8ec827882a0e32c38e0e766abf007f8b3b46313
+        - 87898034589777e77bfa610ed42e6663a6ba57bb91116d296f800199c1bb9183
+    makedepends:
+      - python-clickgen>=2.0.0
+    provenance: full
+  - name: paru
+    version: 2.1.0-2
+    aur_url: https://aur.archlinux.org/packages/paru
+    upstream_url: https://github.com/morganamilo/paru
+    packager: Unknown Packager
+    build_date: Tue Oct 20 11:17:33 2026
+    provenance: partial
+    note: no local AUR-helper clone found (cache cleaned or not built with paru); only pacman metadata recorded
+  - name: python-clickgen
+    version: 2.2.5-1
+    pkgbase: python-clickgen
+    aur_url: https://aur.archlinux.org/packages/python-clickgen
+    upstream_url: https://github.com/ful1e5/clickgen
+    packager: Unknown Packager
+    build_date: Tue Oct 20 11:43:22 2026
+    commit: fc170b4cec33856710640c4bd665a017eca86bc0
+    pkgbuild_sha256: fc2d5d490787cb7d6472160658fac7dad9c9c04c3f8ed1c7845259eae1703376
+    srcinfo_sha256: 79e0d7e30daa6df55e858c630f69a172816e862b3ba1be3fc15877fa0539f892
+    sources:
+      - clickgen-2.2.5.tar.gz::https://github.com/ful1e5/clickgen/archive/refs/tags/v2.2.5.tar.gz
+    checksums:
+      sha256sums:
+        - e76f55eacd66db11d004d2f1a33f42b12d4823d6653e8a288277b045911d51d9
+    depends:
+      - python-attrs
+      - python-numpy
+      - python-pillow
+      - python-toml
+      - python-yaml
+    makedepends:
+      - python-build
+      - python-installer
+      - python-setuptools
+      - python-wheel
+    provenance: full

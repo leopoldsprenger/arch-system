@@ -1,0 +1,81 @@
+# Desired configuration files (user-authored; capture never writes this file).
+# source:      repository path under files/
+# destination: absolute path or "~/..." (expanded for the invoking user)
+# conflict:    skip (default) | backup | replace
+schema_version: 1
+files:
+  - source: files/shared/home/.config/mango/config.toml
+    destination: ~/.config/mango/config.toml
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.bash_profile
+    destination: ~/.bash_profile
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.bashrc
+    destination: ~/.bashrc
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/foot/foot.ini
+    destination: ~/.config/foot/foot.ini
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/gtk-3.0/settings.ini
+    destination: ~/.config/gtk-3.0/settings.ini
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.icons/default/index.theme
+    destination: ~/.icons/default/index.theme
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/btop/btop.conf
+    destination: ~/.config/btop/btop.conf
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/matugen/config.toml
+    destination: ~/.config/matugen/config.toml
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.local/bin/wallpaper
+    destination: ~/.local/bin/wallpaper
+    hosts: '*'
+    mode: "0755"
+    conflict: backup
+  - source: files/shared/home/.config/fastfetch/config.jsonc
+    destination: ~/.config/fastfetch/config.jsonc
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/matugen/templates/btop.theme
+    destination: ~/.config/matugen/templates/btop.theme
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/matugen/templates/foot-colors.ini
+    destination: ~/.config/matugen/templates/foot-colors.ini
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/matugen/templates/mango.conf
+    destination: ~/.config/matugen/templates/mango.conf
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/matugen/templates/yazi-theme.toml
+    destination: ~/.config/matugen/templates/yazi-theme.toml
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.gitconfig
+    destination: ~/.gitconfig
+    hosts: '*'
+    mode: "0644"
+    conflict: backup

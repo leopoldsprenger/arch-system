@@ -1,0 +1,13 @@
+# Desired users and groups. Only intended properties; no passwords, ids or credentials.
+# Groups are created if missing; users are created if missing, shells are set, and listed groups are ADDED.
+# Nothing is ever deleted or removed. Privileged groups (wheel, sudo, docker, ...) need
+# "archivist apply --allow-privileged-groups".
+schema_version: 1
+groups: []
+users:
+  - name: leo
+    hosts: '*'
+    shell: /bin/bash
+    groups:
+      - eo
+      - wheel
