@@ -29,6 +29,28 @@ packages:
     makedepends:
       - python-clickgen>=2.0.0
     provenance: full
+  - name: fzf-tab-git
+    version: r298.24105b1-1
+    pkgbase: fzf-tab-git
+    aur_url: https://aur.archlinux.org/packages/fzf-tab-git
+    upstream_url: https://github.com/Aloxaf/fzf-tab
+    packager: Unknown Packager
+    build_date: Tue Oct 20 19:54:21 2026
+    commit: 7fde5e4777c650e5e77d3699b2650d9486bfa736
+    pkgbuild_sha256: a55501a6d7cf9d5ab1b7aa12b6001cbc1009ab589981de18d930323847b92d5d
+    srcinfo_sha256: 66acaee297d575d6595fc2841d10160903256f93017833d621570d345f718824
+    sources:
+      - git+https://github.com/Aloxaf/fzf-tab.git
+    checksums:
+      sha512sums:
+        - SKIP
+    depends:
+      - zsh
+      - fzf
+    makedepends:
+      - git
+    provenance: partial
+    note: local clone is at r199.220bee3-3 but r298.24105b1-1 is installed (the clone was updated after the build); checksums describe the clone, not necessarily the installed build
   - name: paru
     version: 2.1.0-2
     aur_url: https://aur.archlinux.org/packages/paru

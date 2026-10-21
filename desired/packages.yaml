@@ -84,3 +84,22 @@ packages:
   - name: paru
     hosts: '*'
     source: aur
+  - name: bat
+    hosts: '*'
+  - name: eza
+    hosts: '*'
+  - name: feh
+    hosts: '*'
+  - name: starship
+    hosts: '*'
+  - name: zsh
+    hosts: '*'
+  - name: zsh-autosuggestions
+    hosts: '*'
+  - name: zsh-syntax-highlighting
+    hosts: '*'
+  - name: fzf-tab-git
+    hosts: '*'
+    source: aur
+  - name: zsh-completions
+    hosts: '*'

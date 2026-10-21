@@ -1,0 +1,37 @@
+add_newline = false
+
+format = "$directory$git_branch$git_status$character"
+right_format = "$cmd_duration"
+
+[directory]
+truncation_length = 1
+fish_style_pwd_dir_length = 0
+format = "[$path]($style)"
+
+[git_branch]
+format = " git:\\([$symbol$branch](cyan)\\)"
+symbol = ""
+
+[git_status]
+format = "([$all_status$ahead_behind]($style))"
+conflicted = "="
+ahead = "⇡"
+behind = "⇣"
+diverged = "⇕"
+untracked = ""
+stashed = ""
+modified = "*"
+staged = "*"
+renamed = ""
+deleted = ""
+
+[character]
+success_symbol = "[ ❯](bold green)"
+error_symbol = "[ ❯](bold red)"
+
+[continuation_prompt]
+format = "[ ❯❯ ](bold green)"
+
+[cmd_duration]
+min_time = 5000
+format = "[$duration](yellow)"

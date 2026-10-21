@@ -1,3 +1,98 @@
 schema_version: 1
 host: macbook-vm
-files: []
+files:
+  - destination: ~/.bash_profile
+    state: present
+    mode: "0644"
+    sha256: 6599a7737203733f9d7f96795764f8a2e544a9f5c0b01f1fb287d9a1b35c3a3d
+    size: 90
+  - destination: ~/.bashrc
+    state: present
+    mode: "0644"
+    sha256: d721418537062cd80b376ca7df55f1b2cb0809e68a7fb9d2da1b00e7e4e7f8ad
+    size: 210
+  - destination: ~/.config/btop/btop.conf
+    state: present
+    mode: "0644"
+    sha256: cc5221752234a28de36101dea00e32c7a0fadc4ae2edd4fb0bd49d00263f98cf
+    size: 9856
+  - destination: ~/.config/fastfetch/config.jsonc
+    state: present
+    mode: "0644"
+    sha256: ee0d136dcf121e2bd4aa2a1f0e425f76e9983c1c25f7ecc699676969a12d8cb0
+    size: 595
+  - destination: ~/.config/foot/foot.ini
+    state: present
+    mode: "0644"
+    sha256: 65ec9d486e8b883c4a6dbd1a031e19f566ad3bfa616b7d2b1e0b349d350bc745
+    size: 512
+  - destination: ~/.config/gtk-3.0/settings.ini
+    state: present
+    mode: "0644"
+    sha256: 67fc16a0ce2b8fd881865b2e1f1bebc75d4af0c04ef1e36f5f79e4683a74e1fb
+    size: 76
+  - destination: ~/.config/mango/config.toml
+    state: present
+    mode: "0644"
+    sha256: 3796b756f8cdb85fd19c34d3a153beb3e1e2415a03f4dcb4af93c19e8944f5eb
+    size: 7894
+  - destination: ~/.config/matugen/config.toml
+    state: present
+    mode: "0644"
+    sha256: b605ebea9824f2923d94a57beb5b3a974bd64cdeb000790e3453a0fa7502922e
+    size: 998
+  - destination: ~/.config/matugen/templates/btop.theme
+    state: present
+    mode: "0644"
+    sha256: 49d19c26ee2df5f582e7376e4e1fc3e5ffaaaff8775ae3736365cfee4f60fe07
+    size: 3014
+  - destination: ~/.config/matugen/templates/foot-colors.ini
+    state: present
+    mode: "0644"
+    sha256: ea5b3d287260bdba39dca95d89ba270c5761e1e056efcc7bb1075db7a10cc74d
+    size: 1364
+  - destination: ~/.config/matugen/templates/mango.conf
+    state: present
+    mode: "0644"
+    sha256: 236e26488ce2502018178cf394a487ce31a59b98490991b4a100b50ed03c1420
+    size: 480
+  - destination: ~/.config/matugen/templates/starship.toml
+    state: present
+    mode: "0644"
+    sha256: f1591cc6a155d55045b3531c0d64bed4f883b8f0d5f2be6f79fa777625dc061b
+    size: 1044
+  - destination: ~/.config/matugen/templates/yazi-theme.toml
+    state: present
+    mode: "0644"
+    sha256: 21a58f2fcc52647d54423b366661298cf74654a81c4ea930e185d0c3c310c513
+    size: 4525
+  - destination: ~/.config/starship.toml
+    state: present
+    mode: "0644"
+    sha256: 168df703c2f3dd5193efd647d6af3e47b3434d2144965189221085c67c52cb69
+    size: 680
+  - destination: ~/.gitconfig
+    state: present
+    mode: "0644"
+    sha256: a97ad83d9468302868817d6610b419d0c472436af6cc932a18779132435fef27
+    size: 99
+  - destination: ~/.icons/default/index.theme
+    state: present
+    mode: "0644"
+    sha256: 43428433373d84be11f2484ee78ace0655fec947c2265c688d4d524cb2359e3c
+    size: 83
+  - destination: ~/.local/bin/wallpaper
+    state: present
+    mode: "0755"
+    sha256: 6e60bfac1a1c9b34afb5accafb181dcf547756857f189f742fd7f0d45dc230da
+    size: 433
+  - destination: ~/.zprofile
+    state: present
+    mode: "0644"
+    sha256: 006ce900a96ba15798f24c29093fe64d28b7fd403efc574f8c9c52e7597c0412
+    size: 136
+  - destination: ~/.zshrc
+    state: present
+    mode: "0644"
+    sha256: ecbfb67b9ec5391a988ae1e4ee934891bbafdd020723e7a7720f1f964daba540
+    size: 1833

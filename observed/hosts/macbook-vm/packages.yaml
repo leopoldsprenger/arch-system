@@ -156,6 +156,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: bat
+    repository: extra
+    version: 0.26.1-3
+    architecture: aarch64
+    reason: explicit
+    origin: repo
   - name: bibata-cursor-theme
     version: 2.0.7-1
     architecture: any
@@ -301,7 +307,7 @@ packages:
     origin: repo
   - name: dbus
     repository: core
-    version: 1.16.2-1
+    version: 1.16.2-2
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -395,6 +401,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: eza
+    repository: extra
+    version: 0.23.5-2
+    architecture: aarch64
+    reason: explicit
+    origin: repo
   - name: fakeroot
     repository: core
     version: 1:1.37.2-3
@@ -416,6 +428,12 @@ packages:
   - name: fd
     repository: extra
     version: 10.5.0-3
+    architecture: aarch64
+    reason: explicit
+    origin: repo
+  - name: feh
+    repository: extra
+    version: 3.13.1-1
     architecture: aarch64
     reason: explicit
     origin: repo
@@ -497,6 +515,11 @@ packages:
     architecture: aarch64
     reason: explicit
     origin: repo
+  - name: fzf-tab-git
+    version: r298.24105b1-1
+    architecture: any
+    reason: explicit
+    origin: foreign
   - name: gawk
     repository: core
     version: 5.4.1-1
@@ -764,6 +787,12 @@ packages:
   - name: icu
     repository: core
     version: 78.3-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: imlib2
+    repository: extra
+    version: 1.12.7-3
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -1082,6 +1111,12 @@ packages:
   - name: libevent
     repository: core
     version: 2.1.13-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: libexif
+    repository: extra
+    version: 0.6.26-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -1861,7 +1896,7 @@ packages:
     origin: repo
   - name: linux-api-headers
     repository: core
-    version: 7.2-1
+    version: 7.3-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2262,7 +2297,7 @@ packages:
     origin: repo
   - name: perl
     repository: core
-    version: 5.42.3-1
+    version: 5.44.0-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2322,13 +2357,13 @@ packages:
     origin: repo
   - name: pkgconf
     repository: core
-    version: 3.0.7-1
+    version: 3.0.10-1
     architecture: aarch64
     reason: dependency
     origin: repo
   - name: polkit
     repository: extra
-    version: 127-3
+    version: 128-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2649,6 +2684,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: starship
+    repository: extra
+    version: 1.27.0-1
+    architecture: aarch64
+    reason: explicit
+    origin: repo
   - name: sudo
     repository: core
     version: 1.9.17.p2-6
@@ -2681,7 +2722,7 @@ packages:
     origin: repo
   - name: texinfo
     repository: core
-    version: 7.3-1
+    version: 7.3-3
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2959,6 +3000,30 @@ packages:
     repository: extra
     version: 0.10.0-1
     architecture: aarch64
+    reason: explicit
+    origin: repo
+  - name: zsh
+    repository: extra
+    version: 5.9.2-1
+    architecture: aarch64
+    reason: explicit
+    origin: repo
+  - name: zsh-autosuggestions
+    repository: extra
+    version: 0.7.1-1
+    architecture: any
+    reason: explicit
+    origin: repo
+  - name: zsh-completions
+    repository: extra
+    version: 0.36.0-1
+    architecture: any
+    reason: explicit
+    origin: repo
+  - name: zsh-syntax-highlighting
+    repository: extra
+    version: 0.8.0-2
+    architecture: any
     reason: explicit
     origin: repo
   - name: zstd

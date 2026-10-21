@@ -7,7 +7,7 @@ groups: []
 users:
   - name: leo
     hosts: '*'
-    shell: /bin/bash
+    shell: /bin/zsh
     groups:
       - eo
       - wheel

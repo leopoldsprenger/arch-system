@@ -79,3 +79,23 @@ files:
     hosts: '*'
     mode: "0644"
     conflict: backup
+  - source: files/shared/home/.zshrc
+    destination: ~/.zshrc
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/starship.toml
+    destination: ~/.config/starship.toml
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/matugen/templates/starship.toml
+    destination: ~/.config/matugen/templates/starship.toml
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.zprofile
+    destination: ~/.zprofile
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
