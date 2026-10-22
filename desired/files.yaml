@@ -100,28 +100,28 @@ files:
     hosts: '*'
     mode: "0644"
     conflict: backup
-  - source: files/shared/root/home/leo/.config/matugen
-    destination: /home/leo/.config/matugen
+  - source: files/shared/home/.config/matugen
+    destination: ~/.config/matugen
     hosts: '*'
     conflict: backup
     exclude:
       - generated
-  - source: files/shared/root/home/leo/Pictures/wallpapers
-    destination: /home/leo/Pictures/wallpapers
+  - source: files/shared/home/Pictures/wallpapers
+    destination: ~/Pictures/wallpapers
     hosts: '*'
     conflict: backup
-  - source: files/shared/root/home/leo/.config/zathura/zathurarc
-    destination: /home/leo/.config/zathura/zathurarc
+  - source: files/shared/home/.config/zathura/zathurarc
+    destination: ~/.config/zathura/zathurarc
     hosts: '*'
     mode: "0644"
     conflict: backup
-  - source: files/shared/root/home/leo/.local/bin/projects
-    destination: /home/leo/.local/bin/projects
+  - source: files/shared/home/.local/bin/projects
+    destination: ~/.local/bin/projects
     hosts: '*'
     mode: "0755"
     conflict: backup
-  - source: files/shared/root/home/leo/.local/bin/mk-proj
-    destination: /home/leo/.local/bin/mk-proj
+  - source: files/shared/home/.local/bin/mk-proj
+    destination: ~/.local/bin/mk-proj
     hosts: '*'
     mode: "0755"
     conflict: backup

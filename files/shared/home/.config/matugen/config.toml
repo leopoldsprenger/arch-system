@@ -32,3 +32,17 @@ post_hook = 'mmsg dispatch reload_config > /dev/null 2>&1'
 [templates.starship]
 input_path = '~/.config/matugen/templates/starship.toml'
 output_path = '~/.config/matugen/generated/starship.toml'
+
+[templates.neovim]
+input_path = "~/.config/matugen/templates/nvim.lua"
+output_path = "~/.config/nvim/lua/config/matugen_colors.lua"
+post_hook = "pkill -SIGUSR1 -x nvim || true"
+
+[templates.zathura]
+input_path = '~/.config/matugen/templates/zathura'
+output_path = '~/.config/zathura/zathurarc-matugen'
+
+[templates.pywalfox]
+input_path = '~/.config/matugen/templates/pywalfox-colors.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update || true'
