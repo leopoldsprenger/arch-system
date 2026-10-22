@@ -1,2 +1,4 @@
 # Fix upside-down hardware cursor rendering
-export WLR_NO_HARDWARE_CURSORS=1
+if [[ $(/usr/bin/cat /etc/hostname) == *-vm ]]; then
+   export WLR_NO_HARDWARE_CURSORS=1
+fi

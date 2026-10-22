@@ -14,10 +14,10 @@ if [[ ! -f "$image" ]]; then
 fi
 
 # Set the wallpaper first.
-awww img "$image"
+awww img "$image" --transition-type fade --transition-duration 0.5
 
 # Generate the Material You palette and btop theme.
 matugen image "$image" \
     -m dark \
     --source-color-index 0 \
-    --type scheme-tonal-spot
+    --type scheme-content

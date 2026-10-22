@@ -1,0 +1,58 @@
+{
+  "policies": {
+    "ExtensionSettings": {
+      "*": {
+        "installation_mode": "allowed"
+      },
+      "uBlock0@raymondhill.net": {
+        "installation_mode": "force_installed"
+      },
+      "{446900e4-71c2-419f-a6a7-df9c091e268b}": {
+        "installation_mode": "force_installed"
+      },
+      "sponsorBlocker@ajay.app": {
+        "installation_mode": "force_installed"
+      },
+      "addon@darkreader.org": {
+        "installation_mode": "force_installed"
+      },
+      "vimium-c@gdh1995.cn": {
+        "installation_mode": "force_installed"
+      },
+      "pywalfox@frewacom.org": {
+        "installation_mode": "force_installed"
+      }
+    },
+    "SearchEngines": {
+      "Add": [
+        {
+          "Name": "ddg",
+          "Alias": "@ddg",
+          "URLTemplate": "https://duckduckgo.com/?q={searchTerms}&type=disableaibro",
+          "Method": "GET"
+        }
+      ],
+      "Default": "ddg"
+    },
+    "Bookmarks": [
+      {
+        "toplevel_name": "Bookmarks Toolbar"
+      },
+      {
+        "name": "HPI Slack",
+        "url": "https://hpi.enterprise.slack.com/",
+        "placement": "toolbar"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/",
+        "placement": "toolbar"
+      },
+      {
+        "name": "HPI GitLab",
+        "url": "https://gitlab.hpi.de/",
+        "placement": "toolbar"
+      }
+    ]
+  }
+}

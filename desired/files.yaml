@@ -39,11 +39,6 @@ files:
     hosts: '*'
     mode: "0644"
     conflict: backup
-  - source: files/shared/home/.config/matugen/config.toml
-    destination: ~/.config/matugen/config.toml
-    hosts: '*'
-    mode: "0644"
-    conflict: backup
   - source: files/shared/home/.local/bin/wallpaper
     destination: ~/.local/bin/wallpaper
     hosts: '*'
@@ -51,26 +46,6 @@ files:
     conflict: backup
   - source: files/shared/home/.config/fastfetch/config.jsonc
     destination: ~/.config/fastfetch/config.jsonc
-    hosts: '*'
-    mode: "0644"
-    conflict: backup
-  - source: files/shared/home/.config/matugen/templates/btop.theme
-    destination: ~/.config/matugen/templates/btop.theme
-    hosts: '*'
-    mode: "0644"
-    conflict: backup
-  - source: files/shared/home/.config/matugen/templates/foot-colors.ini
-    destination: ~/.config/matugen/templates/foot-colors.ini
-    hosts: '*'
-    mode: "0644"
-    conflict: backup
-  - source: files/shared/home/.config/matugen/templates/mango.conf
-    destination: ~/.config/matugen/templates/mango.conf
-    hosts: '*'
-    mode: "0644"
-    conflict: backup
-  - source: files/shared/home/.config/matugen/templates/yazi-theme.toml
-    destination: ~/.config/matugen/templates/yazi-theme.toml
     hosts: '*'
     mode: "0644"
     conflict: backup
@@ -89,13 +64,64 @@ files:
     hosts: '*'
     mode: "0644"
     conflict: backup
-  - source: files/shared/home/.config/matugen/templates/starship.toml
-    destination: ~/.config/matugen/templates/starship.toml
-    hosts: '*'
-    mode: "0644"
-    conflict: backup
   - source: files/shared/home/.zprofile
     destination: ~/.zprofile
     hosts: '*'
     mode: "0644"
+    conflict: backup
+  - source: files/hosts/macbook-vm/home/.config/mango/local_monitor.toml
+    destination: ~/.config/mango/local_monitor.toml
+    hosts:
+      - macbook-vm
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.gitignore_global
+    destination: ~/.gitignore_global
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/root/etc/ly/config.ini
+    destination: /etc/ly/config.ini
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/root/etc/systemd/system/ly@tty2.service.d/override.conf
+    destination: /etc/systemd/system/ly@tty2.service.d/override.conf
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/root/usr/lib/firefox/distribution/policies.json
+    destination: /usr/lib/firefox/distribution/policies.json
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/mozilla/firefox/w1kv4706.default-release/user.js
+    destination: ~/.config/mozilla/firefox/w1kv4706.default-release/user.js
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/root/home/leo/.config/matugen
+    destination: /home/leo/.config/matugen
+    hosts: '*'
+    conflict: backup
+    exclude:
+      - generated
+  - source: files/shared/root/home/leo/Pictures/wallpapers
+    destination: /home/leo/Pictures/wallpapers
+    hosts: '*'
+    conflict: backup
+  - source: files/shared/root/home/leo/.config/zathura/zathurarc
+    destination: /home/leo/.config/zathura/zathurarc
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/root/home/leo/.local/bin/projects
+    destination: /home/leo/.local/bin/projects
+    hosts: '*'
+    mode: "0755"
+    conflict: backup
+  - source: files/shared/root/home/leo/.local/bin/mk-proj
+    destination: /home/leo/.local/bin/mk-proj
+    hosts: '*'
+    mode: "0755"
     conflict: backup

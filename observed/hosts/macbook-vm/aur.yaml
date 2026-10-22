@@ -86,3 +86,23 @@ packages:
       - python-setuptools
       - python-wheel
     provenance: full
+  - name: python-pywalfox
+    version: 2.9.0-1
+    pkgbase: python-pywalfox
+    aur_url: https://aur.archlinux.org/packages/python-pywalfox
+    upstream_url: https://github.com/frewacom/pywalfox
+    packager: Unknown Packager
+    build_date: Thu Oct 22 17:12:29 2026
+    commit: af862b7b45102605b76cce4b3aab51c2f995066b
+    pkgbuild_sha256: a0b4ce45a458ee59637e2ac8f78c5f250c9175635a51424c56c03984989cb467
+    srcinfo_sha256: badeb47ed8403bc530d944922dda1f09f936630d17ca5dea0d96f34a6e4318bb
+    sources:
+      - python-pywalfox-2.9.0.tar.gz::https://pypi.python.org/packages/source/p/pywalfox/pywalfox-2.9.0.tar.gz
+    checksums:
+      sha256sums:
+        - 8a0dee4f7adfa78609314905f245e5da1bb4d7f0d1cae7a3da56c4e284dd3501
+    depends:
+      - python
+    makedepends:
+      - python-setuptools
+    provenance: full

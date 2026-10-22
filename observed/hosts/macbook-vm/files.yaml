@@ -1,6 +1,181 @@
 schema_version: 1
 host: macbook-vm
 files:
+  - destination: /etc/ly/config.ini
+    state: present
+    mode: "0644"
+    sha256: 6cce3eb3bf99061f2f9b6a51087ede2d657b7429b2fe3cf288d895e84aef0614
+    size: 181
+  - destination: /etc/systemd/system/ly@tty2.service.d/override.conf
+    state: present
+    mode: "0644"
+    sha256: d503185c7586a60d4d1347e2fdf3f5b28ee8c7bd374328fc7d4fd7ac257efedd
+    size: 70
+  - destination: /home/leo/.config/matugen/config.toml
+    state: present
+    mode: "0644"
+    sha256: 64f61e2ddb9a08ddf8a3905409490f822565859b63c1e509ddd45e1c1597ca34
+    size: 1465
+  - destination: /home/leo/.config/matugen/templates/btop.theme
+    state: present
+    mode: "0644"
+    sha256: 49d19c26ee2df5f582e7376e4e1fc3e5ffaaaff8775ae3736365cfee4f60fe07
+    size: 3014
+  - destination: /home/leo/.config/matugen/templates/foot-colors.ini
+    state: present
+    mode: "0644"
+    sha256: ea5b3d287260bdba39dca95d89ba270c5761e1e056efcc7bb1075db7a10cc74d
+    size: 1364
+  - destination: /home/leo/.config/matugen/templates/mango.conf
+    state: present
+    mode: "0644"
+    sha256: 236e26488ce2502018178cf394a487ce31a59b98490991b4a100b50ed03c1420
+    size: 480
+  - destination: /home/leo/.config/matugen/templates/nvim.lua
+    state: present
+    mode: "0644"
+    sha256: 89176dbc05818c64e9ed2ec1ee98595a30d2f3ecff18f00d290d80ec72457b45
+    size: 777
+  - destination: /home/leo/.config/matugen/templates/pywalfox-colors.json
+    state: present
+    mode: "0644"
+    sha256: 007ee8479825185c6ea8b7f4d879f18f05dfe228620c1aa1f92217750d55b348
+    size: 1131
+  - destination: /home/leo/.config/matugen/templates/starship.toml
+    state: present
+    mode: "0644"
+    sha256: f1591cc6a155d55045b3531c0d64bed4f883b8f0d5f2be6f79fa777625dc061b
+    size: 1044
+  - destination: /home/leo/.config/matugen/templates/yazi-theme.toml
+    state: present
+    mode: "0644"
+    sha256: 21a58f2fcc52647d54423b366661298cf74654a81c4ea930e185d0c3c310c513
+    size: 4525
+  - destination: /home/leo/.config/matugen/templates/zathura
+    state: present
+    mode: "0644"
+    sha256: 39e3e11e5bc81e9bd58388f850740a0190c0d157a1001c35057fe6e60a99904a
+    size: 1329
+  - destination: /home/leo/.config/zathura/zathurarc
+    state: present
+    mode: "0644"
+    sha256: 06783f7db6f6bfc96a386ae6eb733a6a37925c60dae4bbde759296bac8c99ffe
+    size: 26
+  - destination: /home/leo/.local/bin/mk-proj
+    state: present
+    mode: "0755"
+    sha256: 47e60d543041fdac652febb1441bcd558c872b98c30a8a8af3f5a747b319810f
+    size: 4100
+  - destination: /home/leo/.local/bin/projects
+    state: present
+    mode: "0755"
+    sha256: 3fc063284ccc87970f93824bd7ec30b43690cef36e6098347c0edd520ad6c37b
+    size: 289
+  - destination: /home/leo/Pictures/wallpapers/blue_white_silver_city_anime.jpg
+    state: present
+    mode: "0644"
+    sha256: 95815a1fdafb9f31cc8b8b5f2001afb2647c1f4d26ccd8e9a801adaa738e0ef9
+    size: 915956
+  - destination: /home/leo/Pictures/wallpapers/catpucchin-mocha-hollow-knight.jpg
+    state: present
+    mode: "0644"
+    sha256: 757dd7b5ffcc6bd502ccb7e64719f12cc1cd2fe2018d3d94d3aaee3e68f9ac7c
+    size: 490507
+  - destination: /home/leo/Pictures/wallpapers/catpucchin-mocha-red-moon.jpg
+    state: present
+    mode: "0644"
+    sha256: 03130a64370f6a009aae66cb81dff9c57d46e4448240f75f9cf1eaacb6e088d7
+    size: 290124
+  - destination: /home/leo/Pictures/wallpapers/catpucchin-mocha-ruins-city.jpg
+    state: present
+    mode: "0644"
+    sha256: 63c5431486f65b700a238f5a3eb1dcb1c850f6e62b7bc6bd8ea5b90cd4385e1e
+    size: 814831
+  - destination: /home/leo/Pictures/wallpapers/catpucchin-mocha-shipwreck.jpg
+    state: present
+    mode: "0644"
+    sha256: 8356e3aee596063173855b2482a856fa6b60bf704df1ace0bd42ca0ce34ce164
+    size: 547184
+  - destination: /home/leo/Pictures/wallpapers/catpucchin-mocha-tori-gate.jpg
+    state: present
+    mode: "0644"
+    sha256: 83a0d2e2fd4482e2f05790b7c6ba40baecd97d7433fb3686c9a01d68442fb5a8
+    size: 989312
+  - destination: /home/leo/Pictures/wallpapers/dark-blue-wave-mac.jpg
+    state: present
+    mode: "0644"
+    sha256: 4d4850086aa0f755bc288b3dceb45188f9560f14af7d9d8a6da4e53218a93ce5
+    size: 151450
+  - destination: /home/leo/Pictures/wallpapers/dark-orange-koi.jpg
+    state: present
+    mode: "0644"
+    sha256: 0655fe368772a78531d5e8f020eb8f6edc2f424e1245786cf6a96f54f635ca40
+    size: 113384
+  - destination: /home/leo/Pictures/wallpapers/fantasy.jpg
+    state: present
+    mode: "0644"
+    sha256: 3795160dabe783773c49d88e96550b6682fbeca2cec58d2d6822351eca5ccfb6
+    size: 976307
+  - destination: /home/leo/Pictures/wallpapers/forest_green_light_minecraft.jpg
+    state: present
+    mode: "0644"
+    sha256: 99e205c2705b959b0c07f8b8a93bfb3fcbdb021de2ac02924b4290cad00fab50
+    size: 592347
+  - destination: /home/leo/Pictures/wallpapers/green-blue-teal-bridge.jpg
+    state: present
+    mode: "0644"
+    sha256: 434de673056b77f200e67a1e9776b01580006842b0fbc5a6ec860da02a6ee1db
+    size: 292427
+  - destination: /home/leo/Pictures/wallpapers/green-forest-shadow.jpg
+    state: present
+    mode: "0644"
+    sha256: 2aae1a777b2ba2af26a31233cc7a4be62dae90a018b92d27c5ba4c7d7180e0b5
+    size: 142533
+  - destination: /home/leo/Pictures/wallpapers/green_minecraft_forest_light_2.jpg
+    state: present
+    mode: "0644"
+    sha256: 9c3d22da7dfe494bf75796466fa382c3e43c4958ca6ac2ec3e2657b61b9c0218
+    size: 795290
+  - destination: /home/leo/Pictures/wallpapers/hollow_knight.jpg
+    state: present
+    mode: "0644"
+    sha256: d432b44dc856509034b53a4d0267233851009141f8c0359c4e4ab3b9eac6eade
+    size: 378318
+  - destination: /home/leo/Pictures/wallpapers/moon.jpg
+    state: present
+    mode: "0644"
+    sha256: 69795e22dba7ee5cbe0ac160f2ffc1e890768e1736ed8c2926eac5a20f75b263
+    size: 583314
+  - destination: /home/leo/Pictures/wallpapers/moon_2.jpg
+    state: present
+    mode: "0644"
+    sha256: 2472b185dfa4c49ba68c401ab99b6713ee3e1cd4f4327e92ec02301b6f507aac
+    size: 665602
+  - destination: /home/leo/Pictures/wallpapers/nixos-dark.png
+    state: present
+    mode: "0644"
+    sha256: 62fb67c5a8f7d985e95245d0285d5535c02941fd2fdc95c6a7d4cd02ca0999b3
+    size: 145059
+  - destination: /home/leo/Pictures/wallpapers/red-sunset.jpg
+    state: present
+    mode: "0644"
+    sha256: 5de6493ec85ab1bdbeb655dbc5c3900b934ea63c0c03b3c725afad0192a6d678
+    size: 296759
+  - destination: /home/leo/Pictures/wallpapers/red-tori-gate-sunset.jpg
+    state: present
+    mode: "0644"
+    sha256: e43ee739043ae75623dfc6e8691091d7b6e94cca262c417160bba225e521bf90
+    size: 180710
+  - destination: /home/leo/Pictures/wallpapers/satellite-kurzgesagt-catpucchin-mocha.png
+    state: present
+    mode: "0644"
+    sha256: 79fc5e92cbb4aa298a7d542e47bd1480cf30ec76d3d72f69b143cb3935ec89f9
+    size: 355708
+  - destination: /usr/lib/firefox/distribution/policies.json
+    state: present
+    mode: "0644"
+    sha256: 39526cc2d8c1de5ac6097f44bf8b163998a6a44f87d8603b9c4d8f4f6e3cb0dd
+    size: 1377
   - destination: ~/.bash_profile
     state: present
     mode: "0644"
@@ -34,38 +209,18 @@ files:
   - destination: ~/.config/mango/config.toml
     state: present
     mode: "0644"
-    sha256: 3796b756f8cdb85fd19c34d3a153beb3e1e2415a03f4dcb4af93c19e8944f5eb
-    size: 7894
-  - destination: ~/.config/matugen/config.toml
+    sha256: 2116582f91a4b47722473770ce9a0a73922259ac415c32ad61e755d9ab899837
+    size: 7825
+  - destination: ~/.config/mango/local_monitor.toml
     state: present
     mode: "0644"
-    sha256: b605ebea9824f2923d94a57beb5b3a974bd64cdeb000790e3453a0fa7502922e
-    size: 998
-  - destination: ~/.config/matugen/templates/btop.theme
+    sha256: 5c90c4dd8ff1de384a7fe04280f09580339d7bfe52134d07579e0aab979a747a
+    size: 113
+  - destination: ~/.config/mozilla/firefox/w1kv4706.default-release/user.js
     state: present
     mode: "0644"
-    sha256: 49d19c26ee2df5f582e7376e4e1fc3e5ffaaaff8775ae3736365cfee4f60fe07
-    size: 3014
-  - destination: ~/.config/matugen/templates/foot-colors.ini
-    state: present
-    mode: "0644"
-    sha256: ea5b3d287260bdba39dca95d89ba270c5761e1e056efcc7bb1075db7a10cc74d
-    size: 1364
-  - destination: ~/.config/matugen/templates/mango.conf
-    state: present
-    mode: "0644"
-    sha256: 236e26488ce2502018178cf394a487ce31a59b98490991b4a100b50ed03c1420
-    size: 480
-  - destination: ~/.config/matugen/templates/starship.toml
-    state: present
-    mode: "0644"
-    sha256: f1591cc6a155d55045b3531c0d64bed4f883b8f0d5f2be6f79fa777625dc061b
-    size: 1044
-  - destination: ~/.config/matugen/templates/yazi-theme.toml
-    state: present
-    mode: "0644"
-    sha256: 21a58f2fcc52647d54423b366661298cf74654a81c4ea930e185d0c3c310c513
-    size: 4525
+    sha256: be043f9645d97976c48a3718ac11979e1afa729f6bbc6849b679612cbbd21c27
+    size: 1091
   - destination: ~/.config/starship.toml
     state: present
     mode: "0644"
@@ -76,6 +231,11 @@ files:
     mode: "0644"
     sha256: a97ad83d9468302868817d6610b419d0c472436af6cc932a18779132435fef27
     size: 99
+  - destination: ~/.gitignore_global
+    state: present
+    mode: "0644"
+    sha256: 2ada17899331926673b3d57f28d7ebd6a5040553598e2af06f995f5a9e4bee8f
+    size: 11
   - destination: ~/.icons/default/index.theme
     state: present
     mode: "0644"
@@ -84,8 +244,8 @@ files:
   - destination: ~/.local/bin/wallpaper
     state: present
     mode: "0755"
-    sha256: 6e60bfac1a1c9b34afb5accafb181dcf547756857f189f742fd7f0d45dc230da
-    size: 433
+    sha256: 668bd234a35282ed672a8e50b75fa23abed199847d277f685f52d6364ba1af67
+    size: 479
   - destination: ~/.zprofile
     state: present
     mode: "0644"
@@ -94,5 +254,5 @@ files:
   - destination: ~/.zshrc
     state: present
     mode: "0644"
-    sha256: ecbfb67b9ec5391a988ae1e4ee934891bbafdd020723e7a7720f1f964daba540
-    size: 1833
+    sha256: 4c3f8a52235e00d486d3853ac0d2a5951bc3f64a43e3ad59aee42d1c7af748ca
+    size: 1866

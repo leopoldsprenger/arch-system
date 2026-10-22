@@ -103,3 +103,22 @@ packages:
     source: aur
   - name: zsh-completions
     hosts: '*'
+  - name: unzip
+    hosts: '*'
+  - name: xwayland-satellite
+    hosts: '*'
+  - name: zip
+    hosts: '*'
+  - name: neovim
+    hosts: '*'
+  - name: luarocks
+    hosts: '*'
+  - name: zathura
+    hosts: '*'
+  - name: tree-sitter-cli
+    hosts: '*'
+  - name: zathura-pdf-mupdf
+    hosts: '*'
+  - name: python-pywalfox
+    hosts: '*'
+    source: aur

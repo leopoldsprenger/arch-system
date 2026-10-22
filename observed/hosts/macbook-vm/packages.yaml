@@ -229,7 +229,7 @@ packages:
     origin: repo
   - name: ca-certificates-mozilla
     repository: core
-    version: 3.131-1
+    version: 3.131.1-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -263,9 +263,15 @@ packages:
     architecture: aarch64
     reason: explicit
     origin: repo
+  - name: cmark-gfm
+    repository: extra
+    version: 0.29.0.gfm.13-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: compiler-rt
     repository: extra
-    version: 23.1.3-3
+    version: 23.1.3-4.1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -391,7 +397,7 @@ packages:
     origin: repo
   - name: elfutils
     repository: core
-    version: 0.196-1
+    version: 0.197-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -469,7 +475,7 @@ packages:
     origin: repo
   - name: firefox
     repository: extra
-    version: 158.0-1
+    version: 158.0.1-1
     architecture: aarch64
     reason: explicit
     origin: repo
@@ -506,6 +512,18 @@ packages:
   - name: fribidi
     repository: extra
     version: 1.0.17-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: fuse-common
+    repository: extra
+    version: 3.18.3-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: fuse3
+    repository: extra
+    version: 3.18.3-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -580,6 +598,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: girara
+    repository: extra
+    version: 2026.07.18-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: git
     repository: extra
     version: 2.56.0-1
@@ -588,7 +612,7 @@ packages:
     origin: repo
   - name: github-cli
     repository: extra
-    version: 2.102.0-1
+    version: 2.102.1-1
     architecture: aarch64
     reason: explicit
     origin: repo
@@ -648,13 +672,13 @@ packages:
     origin: repo
   - name: go
     repository: extra
-    version: 2:1.27.2-1
+    version: 2:1.27.3-1
     architecture: aarch64
     reason: explicit
     origin: repo
   - name: gperftools
     repository: extra
-    version: 2.18.1-1
+    version: 2.19-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -673,6 +697,12 @@ packages:
   - name: gpm
     repository: core
     version: 1.20.7.r38.ge82d1a6-7
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: graphene
+    repository: extra
+    version: 1.10.8-2.1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -718,6 +748,30 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: gssdp
+    repository: extra
+    version: 1.6.6-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: gst-plugins-bad-libs
+    repository: extra
+    version: 1.28.8-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: gst-plugins-base-libs
+    repository: extra
+    version: 1.28.8-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: gstreamer
+    repository: extra
+    version: 1.28.8-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: gtest
     repository: extra
     version: 1.18.0-1
@@ -736,9 +790,33 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: gtk4
+    repository: extra
+    version: 1:4.24.1-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: guile
     repository: core
     version: 3.0.11-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: gumbo-parser
+    repository: extra
+    version: 0.14.1-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: gupnp
+    repository: extra
+    version: 1:1.6.10-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: gupnp-igd
+    repository: extra
+    version: 1.6.0-2
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -826,6 +904,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: jbig2dec
+    repository: extra
+    version: 0.20-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: jbigkit
     repository: extra
     version: 2.2-1
@@ -907,6 +991,12 @@ packages:
   - name: leancrypto
     repository: core
     version: 1.9.1-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: leptonica
+    repository: extra
+    version: 1.87.0-2
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -1092,7 +1182,7 @@ packages:
     origin: repo
   - name: libelf
     repository: core
-    version: 0.196-1
+    version: 0.197-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -1276,6 +1366,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: libluv
+    repository: extra
+    version: 1.52.1-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: libmakepkg-dropins
     repository: core
     version: 20-2
@@ -1309,6 +1405,12 @@ packages:
   - name: libmpc
     repository: core
     version: 1.4.1-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: libmupdf
+    repository: extra
+    version: 1.28.5-2
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -1363,6 +1465,12 @@ packages:
   - name: libngtcp2
     repository: core
     version: 1.25.0-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: libnice
+    repository: extra
+    version: 0.1.24-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -1570,6 +1678,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: libsynctex
+    repository: extra
+    version: 2026.0-4
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: libsysprof-capture
     repository: extra
     version: 51.0-1
@@ -1648,6 +1762,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: liburing
+    repository: extra
+    version: 2.15-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: libusb
     repository: core
     version: 1.0.30-1
@@ -1657,6 +1777,12 @@ packages:
   - name: libutf8proc
     repository: extra
     version: 2.12.0-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: libuv
+    repository: extra
+    version: 1.52.1-2
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -1687,6 +1813,12 @@ packages:
   - name: libvpx
     repository: extra
     version: 1.17.0-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: libvterm
+    repository: extra
+    version: 0.3.3-2
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -1799,6 +1931,12 @@ packages:
     reason: dependency
     origin: repo
   - name: libxkbcommon
+    repository: extra
+    version: 1.13.2-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: libxkbcommon-x11
     repository: extra
     version: 1.13.2-1
     architecture: aarch64
@@ -1986,7 +2124,7 @@ packages:
     origin: repo
   - name: lld
     repository: extra
-    version: 23.1.3-3
+    version: 23.1.3-4.1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -1998,7 +2136,7 @@ packages:
     origin: repo
   - name: llvm-libs
     repository: extra
-    version: 23.1.3-3
+    version: 23.1.3-4.1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2020,11 +2158,35 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: lua-luarocks
+    repository: extra
+    version: 3.13.0-5
+    architecture: any
+    reason: dependency
+    origin: repo
+  - name: lua51-lpeg
+    repository: extra
+    version: 1.1.0-5
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: lua54
     repository: extra
     version: 5.4.9-1
     architecture: aarch64
     reason: dependency
+    origin: repo
+  - name: luajit
+    repository: extra
+    version: 2.1.1792527110+95f931c-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: luarocks
+    repository: extra
+    version: 3.13.0-5
+    architecture: any
+    reason: explicit
     origin: repo
   - name: lv2
     repository: extra
@@ -2128,6 +2290,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: msgpack-c
+    repository: extra
+    version: 7.0.2-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: mtdev
     repository: extra
     version: 1.1.7-1
@@ -2139,6 +2307,12 @@ packages:
     version: 6.6-2
     architecture: aarch64
     reason: dependency
+    origin: repo
+  - name: neovim
+    repository: extra
+    version: 0.12.6-1
+    architecture: aarch64
+    reason: explicit
     origin: repo
   - name: nettle
     repository: core
@@ -2178,7 +2352,13 @@ packages:
     origin: repo
   - name: nss
     repository: core
-    version: 3.131-1
+    version: 3.131.1-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: numactl
+    repository: extra
+    version: 2.0.19-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2215,6 +2395,12 @@ packages:
   - name: opus
     repository: extra
     version: 1.6.1-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: orc
+    repository: extra
+    version: 0.4.44-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2369,7 +2555,7 @@ packages:
     origin: repo
   - name: poppler
     repository: extra
-    version: 26.08.0-1
+    version: 26.10.0-1
     architecture: aarch64
     reason: explicit
     origin: repo
@@ -2458,7 +2644,7 @@ packages:
     origin: repo
   - name: python-more-itertools
     repository: extra
-    version: 11.2.0-1
+    version: 11.2.1-1
     architecture: any
     reason: dependency
     origin: repo
@@ -2482,7 +2668,7 @@ packages:
     origin: repo
   - name: python-platformdirs
     repository: extra
-    version: 4.13.0-1
+    version: 4.13.5-1
     architecture: any
     reason: dependency
     origin: repo
@@ -2492,9 +2678,14 @@ packages:
     architecture: any
     reason: dependency
     origin: repo
+  - name: python-pywalfox
+    version: 2.9.0-1
+    architecture: any
+    reason: explicit
+    origin: foreign
   - name: python-setuptools
     repository: extra
-    version: 1:84.0.0-1
+    version: 1:84.2.1-1
     architecture: any
     reason: dependency
     origin: repo
@@ -2542,7 +2733,7 @@ packages:
     origin: repo
   - name: rust
     repository: extra
-    version: 1:1.99.1-1
+    version: 1:1.99.1-1.1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2720,6 +2911,24 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: tesseract
+    repository: extra
+    version: 5.5.3-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: tesseract-data-afr
+    repository: extra
+    version: 2:4.1.0-5
+    architecture: any
+    reason: dependency
+    origin: repo
+  - name: tesseract-data-osd
+    repository: extra
+    version: 2:4.1.0-5
+    architecture: any
+    reason: dependency
+    origin: repo
   - name: texinfo
     repository: core
     version: 7.3-3
@@ -2744,11 +2953,71 @@ packages:
     architecture: aarch64
     reason: explicit
     origin: repo
+  - name: tree-sitter
+    repository: extra
+    version: 0.26.9-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: tree-sitter-c
+    repository: extra
+    version: 0.24.1-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: tree-sitter-cli
+    repository: extra
+    version: 0.26.9-1
+    architecture: aarch64
+    reason: explicit
+    origin: repo
+  - name: tree-sitter-lua
+    repository: extra
+    version: 0.5.0-3
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: tree-sitter-markdown
+    repository: extra
+    version: 0.5.3-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: tree-sitter-query
+    repository: extra
+    version: 0.8.0-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: tree-sitter-vim
+    repository: extra
+    version: 0.8.1-3
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: tree-sitter-vimdoc
+    repository: extra
+    version: 4.1.0-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: tzdata
     repository: core
     version: "2026e-1"
     architecture: aarch64
     reason: dependency
+    origin: repo
+  - name: unibilium
+    repository: extra
+    version: 2.1.4-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: unzip
+    repository: extra
+    version: 6.0-23
+    architecture: aarch64
+    reason: explicit
     origin: repo
   - name: util-linux
     repository: core
@@ -2789,6 +3058,12 @@ packages:
   - name: vim-runtime
     repository: extra
     version: 9.2.1178-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: vmaf
+    repository: extra
+    version: 3.2.1-1
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2870,9 +3145,27 @@ packages:
     architecture: any
     reason: dependency
     origin: repo
+  - name: xcb-util
+    repository: extra
+    version: 0.4.1-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: xcb-util-cursor
+    repository: extra
+    version: 0.1.6-1
+    architecture: aarch64
+    reason: dependency
+    origin: repo
   - name: xcb-util-errors
     repository: extra
     version: 1.0.1-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: xcb-util-image
+    repository: extra
+    version: 0.4.1-3
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2885,6 +3178,18 @@ packages:
   - name: xcb-util-wm
     repository: extra
     version: 0.4.2-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: xdg-desktop-portal
+    repository: extra
+    version: 1.22.1-2
+    architecture: aarch64
+    reason: dependency
+    origin: repo
+  - name: xdg-desktop-portal-gtk
+    repository: extra
+    version: 1.15.3-2
     architecture: aarch64
     reason: dependency
     origin: repo
@@ -2942,6 +3247,12 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: xwayland-satellite
+    repository: extra
+    version: 0.8.3-1
+    architecture: aarch64
+    reason: explicit
+    origin: repo
   - name: xxhash
     repository: extra
     version: 0.8.4-1
@@ -2966,6 +3277,18 @@ packages:
     architecture: aarch64
     reason: dependency
     origin: repo
+  - name: zathura
+    repository: extra
+    version: 2026.10.4-1
+    architecture: aarch64
+    reason: explicit
+    origin: repo
+  - name: zathura-pdf-mupdf
+    repository: extra
+    version: 2026.07.18-5
+    architecture: aarch64
+    reason: explicit
+    origin: repo
   - name: zeromq
     repository: extra
     version: 4.3.5-3
@@ -2977,6 +3300,12 @@ packages:
     version: 3.0.6-2
     architecture: aarch64
     reason: dependency
+    origin: repo
+  - name: zip
+    repository: extra
+    version: 3.0-14
+    architecture: aarch64
+    reason: explicit
     origin: repo
   - name: zix
     repository: extra

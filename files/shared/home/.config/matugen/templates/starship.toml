@@ -21,7 +21,7 @@ format = "[$path]($style)"
 style = "bold primary"
 
 [git_branch]
-format = " git:\\([$symbol$branch](tertiary)\\)"
+format = ' git:\([$symbol$branch](tertiary)\)'
 symbol = ""
 
 [git_status]

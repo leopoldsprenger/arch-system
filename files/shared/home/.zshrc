@@ -1,19 +1,41 @@
 # Avoid the Zsh first-run configuration wizard
 zsh-newuser-install() { :; }
 
-# Completion
+# Completion directories (Arch Linux)
+fpath=(/usr/share/zsh/site-functions $fpath)
+
+# Initialize completion
 autoload -Uz compinit
 compinit
 
-# Plugins installed by pacman
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Completion styling
+zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
+zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
+zstyle ':completion:*' menu no
+
+# fzf-tab — searchable Tab completion
+source /usr/share/zsh/plugins/fzf-tab-git/fzf-tab.plugin.zsh
+
+# fzf-tab appearance and behavior
+zstyle ':fzf-tab:*' fzf-flags --height=60% --layout=reverse
+
+# Directory previews for cd and zoxide
+zstyle ':fzf-tab:complete:(cd|__zoxide_z):*' \
+    fzf-preview 'eza --color=always --icons --tree --level=2 $realpath'
+
+# fzf shell integration (Ctrl+R, Ctrl+T, Alt+C)
+source <(fzf --zsh)
 
 # Add personal executables to PATH
 path=("$HOME/.local/bin" "$HOME/bin" $path)
 
 # Python
 export UV_PYTHON_PREFERENCE=only-system
+
+# Plugins installed by pacman
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=#909090'
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # History
 HISTSIZE=5000
@@ -29,31 +51,18 @@ bindkey -e
 bindkey '^p' history-search-backward
 bindkey '^n' history-search-forward
 
-# Case-insensitive completion
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
-zstyle ':completion:*' menu no
-
 # Aliases
 alias ls='eza --icons=auto --group-directories-first'
 alias ll='eza -lah --icons=auto --group-directories-first'
 alias cat='bat'
+alias vim='nvim'
+alias vi='nvim'
 
 # Bat
 export BAT_THEME=ansi
 
-# Zoxide
-eval "$(zoxide init zsh)"
-
-# fzf keybindings and completion
-source <(fzf --zsh)
-
-# fzf-tab plugin
-if [[ -f /usr/share/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh ]]; then
-    source /usr/share/zsh/plugins/fzf-tab/fzf-tab.plugin.zsh
-fi
-
-zstyle ':fzf-tab:complete:(cd|__zoxide_z):*' \
-    fzf-preview 'eza --icons --tree --level=2 $realpath'
+# Zoxide replaces cd
+eval "$(zoxide init zsh --cmd cd)"
 
 # Starship — Matugen-generated theme
 export STARSHIP_CACHE="$HOME/.cache/starship"

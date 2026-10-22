@@ -9,7 +9,7 @@ fish_style_pwd_dir_length = 0
 format = "[$path]($style)"
 
 [git_branch]
-format = " git:\\([$symbol$branch](cyan)\\)"
+format = "git:([$symbol$branch](tertiary))"
 symbol = ""
 
 [git_status]
