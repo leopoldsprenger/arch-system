@@ -1,0 +1,12 @@
+@define-color bg_bar_color #0e0e0f;
+@define-color text_main #e5e2e3;
+@define-color accent #c1c6d6;
+@define-color accent_alt #c5c6cd;
+@define-color empty_dot #909096;
+@define-color filled_dot #c6c6cc;
+
+@define-color cpu_color #ffb4ab;
+@define-color mem_color #d6c0ce;
+@define-color audio_color #c1c6d6;
+@define-color bell_color #c5c6cd;
+

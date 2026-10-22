@@ -3,6 +3,7 @@
 .archivist-tmp-*
 .archivist/
 *.log
+observed/
 # Decrypted secrets and local age identities must never be committed.
 secrets/**/*.dec
 secrets/**/*.plain

@@ -125,3 +125,7 @@ files:
     hosts: '*'
     mode: "0755"
     conflict: backup
+  - source: files/shared/home/.config/waybar
+    destination: ~/.config/waybar
+    hosts: '*'
+    conflict: backup

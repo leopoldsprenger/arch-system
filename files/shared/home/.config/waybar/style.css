@@ -1,0 +1,81 @@
+/* Importiert die von Matugen generierten Farben */
+@import "colors.css";
+
+* {
+    font-family: "GeistMono Nerd Font", monospace;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    border-radius: 0;
+    min-height: 0;
+}
+
+window#waybar {
+    background-color: rgba(10, 10, 12, 0.85);
+    color: @text_main;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+}
+
+/* Modul Abstände */
+#custom-launcher,
+#clock,
+#cpu,
+#memory,
+#pulseaudio {
+    padding: 0 10px;
+    background-color: transparent;
+}
+
+/* Arch Button */
+#custom-launcher {
+    color: @accent;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 12px;
+    margin-right: 10px;
+}
+
+/* Workspaces: Zahlen */
+#workspaces button {
+    padding: 0 8px;
+    margin: 5px 2px;
+    color: @text_main;
+    background: transparent;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    text-shadow: none;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Aktiv: Hintergrund hervorgehoben */
+#workspaces button.active {
+    color: #0a0a0c;
+    background-color: @accent;
+}
+
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+#workspaces button.active:hover {
+    background-color: @accent;
+}
+
+/* Uhrzeit */
+#clock {
+    color: @text_main;
+    font-weight: bold;
+}
+
+/* Rechte Seite Farbzuweisungen */
+#cpu { color: @text_main; }
+#memory { color: @text_main; }
+#pulseaudio { color: @audio_color; }
+
+/* Notification Icon mit sicherem Abstand zum rechten Rand */
+#custom-notification {
+    color: @bell_color;
+    padding-left: 10px;
+    padding-right: 22px;
+}

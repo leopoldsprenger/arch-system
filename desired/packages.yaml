@@ -122,3 +122,7 @@ packages:
   - name: python-pywalfox
     hosts: '*'
     source: aur
+  - name: waybar
+    hosts: '*'
+  - name: woff2-font-awesome
+    hosts: '*'

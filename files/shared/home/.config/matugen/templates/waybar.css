@@ -1,0 +1,12 @@
+@define-color bg_bar_color {{colors.surface_container_lowest.default.hex}};
+@define-color text_main {{colors.on_surface.default.hex}};
+@define-color accent {{colors.primary.default.hex}};
+@define-color accent_alt {{colors.secondary.default.hex}};
+@define-color empty_dot {{colors.outline.default.hex}};
+@define-color filled_dot {{colors.on_surface_variant.default.hex}};
+
+@define-color cpu_color {{colors.error.default.hex}};
+@define-color mem_color {{colors.tertiary.default.hex}};
+@define-color audio_color {{colors.primary.default.hex}};
+@define-color bell_color {{colors.secondary.default.hex}};
+

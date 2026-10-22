@@ -1,9 +1,0 @@
-schema_version: 1
-host: macbook-vm
-enabled:
-  - NetworkManager-dispatcher.service
-  - NetworkManager-wait-online.service
-  - NetworkManager.service
-  - getty@.service
-  - remote-fs.target
-  - systemd-userdbd.socket

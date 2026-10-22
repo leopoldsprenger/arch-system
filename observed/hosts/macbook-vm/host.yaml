@@ -1,4 +1,0 @@
-schema_version: 1
-hostname: macbook-vm
-architecture: aarch64
-aur_helper: paru

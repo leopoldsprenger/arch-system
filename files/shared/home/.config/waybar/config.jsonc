@@ -1,0 +1,54 @@
+{
+    "layer": "top",
+    "position": "top",
+    "height": 30,
+    "spacing": 0,
+
+    "modules-left": ["custom/launcher", "ext/workspaces"],
+    "modules-center": ["clock"],
+    "modules-right": ["cpu", "memory", "pulseaudio", "custom/notification"],
+
+    "custom/launcher": {
+        "format": "\uf303",
+        "on-click": "",
+        "tooltip": false
+    },
+
+    "ext/workspaces": {
+        "format": "{name}",
+        "on-click": "activate",
+        "sort-by-id": true,
+        "ignore-hidden": false,
+        "persistent-workspaces": {
+            "1": [], "2": [], "3": [], "4": [], "5": []
+        }
+    },
+
+    "clock": {
+        "format": "{:%d %a    %H:%M}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
+    },
+
+    "cpu": {
+        "interval": 2,
+        "format": "\uf4bc {usage}%"
+    },
+
+    "memory": {
+        "interval": 5,
+        "format": "\uefc5\u2009 {percentage}%" // En Space (1.5x wider)
+    },
+
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-muted": "\uf6a9 Muted",
+        "format-icons": {
+            "default": ["\uf026", "\uf027", "\uf028"]
+        }
+    },
+
+    "custom/notification": {
+        "format": "\uf0f3",
+        "tooltip": false
+    }
+}

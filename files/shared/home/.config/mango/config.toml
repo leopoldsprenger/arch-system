@@ -153,7 +153,7 @@ source = [
 [bind.default]
 
 # --- Core ---
-"SUPER+r" = "reload_config"
+"SUPER+r" = "spawn,sh -c 'mmsg dispatch reload_config && waybar --reload'"
 "SUPER+space" = "spawn,rofi -show drun"
 "SUPER+period" = "spawn,rofi -show emoji"
 "SUPER+equal" = "spawn,rofi -show calc"
