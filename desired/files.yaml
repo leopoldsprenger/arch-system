@@ -160,3 +160,8 @@ files:
     hosts: '*'
     mode: "0644"
     conflict: backup
+  - source: files/shared/home/.config/tmux/tmux.conf
+    destination: ~/.config/tmux/tmux.conf
+    hosts: '*'
+    mode: "0644"
+    conflict: backup

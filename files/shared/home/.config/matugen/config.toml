@@ -59,3 +59,8 @@ output_path = '~/.config/fuzzel/colors.ini'
 [templates.swaylock]
 input_path = '~/.config/matugen/templates/swaylock.conf'
 output_path = '~/.config/swaylock/colors'
+
+[templates.tmux]
+input_path = '/home/leo/.config/matugen/templates/tmux.conf'
+output_path = '/home/leo/.config/tmux/theme.conf'
+post_hook = 'tmux source-file /home/leo/.config/tmux/theme.conf 2>/dev/null; tmux refresh-client -S 2>/dev/null || true'

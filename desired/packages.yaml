@@ -187,3 +187,5 @@ packages:
     hosts: '*'
   - name: clang
     hosts: '*'
+  - name: tmux
+    hosts: '*'

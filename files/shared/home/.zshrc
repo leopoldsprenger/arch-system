@@ -58,6 +58,16 @@ alias cat='bat'
 alias vim='nvim'
 alias vi='nvim'
 
+# tmux
+tmux() {
+  if [[ "$1" == "attach" || "$1" == "a" || "$1" == "at" || "$1" == "attach-session" ]]; then
+    shift
+    command tmux new-session -A -s main "$@"
+  else
+    command tmux "$@"
+  fi
+}
+
 # Bat
 export BAT_THEME=ansi
 

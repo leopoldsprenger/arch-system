@@ -3,3 +3,6 @@ schema_version: 1
 services:
   - name: NetworkManager.service
     hosts: '*'
+  - name: systemd-timesyncd.service
+    hosts:
+      - macbook-vm
