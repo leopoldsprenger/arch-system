@@ -6,3 +6,5 @@ services:
   - name: systemd-timesyncd.service
     hosts:
       - macbook-vm
+  - name: ssh-agent.service
+    hosts: '*'

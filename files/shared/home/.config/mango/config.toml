@@ -161,6 +161,7 @@ source = [
 "SUPER+equal" = "spawn,~/.local/bin/fuzzel-calculator.sh"
 "SUPER+p" = "spawn,~/.local/bin/fuzzel-powermenu.sh"
 "SUPER+shift+f" = "spawn,~/.local/bin/fuzzel-files.sh"
+"SUPER+m" = "spawn,~/.local/bin/fuzzel-wallpapers.sh"
 
 # Foot instead of Kitty
 "SUPER+q" = "killclient,"
@@ -168,12 +169,6 @@ source = [
 "SUPER+b" = "spawn,firefox"
 "SUPER+e" = "spawn,foot -e yazi"
 "SUPER+Shift+e" = "spawn,foot -e yazi"
-
-# Wallpaper
-"SUPER+m" = "spawn,wallpaper pick"
-"SUPER+Shift+m" = "spawn,wallhaven"
-"SUPER+comma" = "spawn,wallpaper next"
-"SUPER+Shift+comma" = "spawn,wallpaper random"
 
 # Session
 "SUPER+l" = "spawn,swaylock --config ~/.config/swaylock/config --config ~/.config/swaylock/colors"

@@ -165,3 +165,8 @@ files:
     hosts: '*'
     mode: "0644"
     conflict: backup
+  - source: files/shared/home/.local/bin/fuzzel-wallpapers.sh
+    destination: ~/.local/bin/fuzzel-wallpapers.sh
+    hosts: '*'
+    mode: "0755"
+    conflict: backup

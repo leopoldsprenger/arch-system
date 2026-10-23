@@ -57,6 +57,7 @@ alias ll='eza -lah --icons=auto --group-directories-first'
 alias cat='bat'
 alias vim='nvim'
 alias vi='nvim'
+alias arch='archivist'
 
 # tmux
 tmux() {
@@ -67,6 +68,9 @@ tmux() {
     command tmux "$@"
   fi
 }
+
+# ssh
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 # Bat
 export BAT_THEME=ansi

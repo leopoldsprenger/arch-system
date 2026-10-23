@@ -189,3 +189,5 @@ packages:
     hosts: '*'
   - name: tmux
     hosts: '*'
+  - name: openssh
+    hosts: '*'

@@ -10,7 +10,7 @@
 
     "custom/launcher": {
         "format": "\uf303",
-        "on-click": "",
+        "on-click": "swaylock --config ~/.config/swaylock/config --config ~/.config/swaylock/colors",
         "tooltip": false
     },
 
