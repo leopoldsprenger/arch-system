@@ -1,12 +1,12 @@
-@define-color bg_bar_color #100d0e;
-@define-color text_main #e9e1e1;
-@define-color accent #e5bcc4;
-@define-color accent_alt #d6c1c4;
-@define-color empty_dot #9b8d8f;
-@define-color filled_dot #d3c3c5;
+@define-color bg_bar_color #0a0f0d;
+@define-color text_main #dfe4e0;
+@define-color accent #73d8be;
+@define-color accent_alt #a8cfc2;
+@define-color empty_dot #87938e;
+@define-color filled_dot #bdc9c4;
 
 @define-color cpu_color #ffb4ab;
-@define-color mem_color #e3c0a2;
-@define-color audio_color #e5bcc4;
-@define-color bell_color #d6c1c4;
+@define-color mem_color #d0bcff;
+@define-color audio_color #73d8be;
+@define-color bell_color #a8cfc2;
 
