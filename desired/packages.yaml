@@ -120,8 +120,10 @@ packages:
   - name: zathura-pdf-mupdf
     hosts: '*'
   - name: python-pywalfox
-    hosts: '*'
     source: aur
+    hosts: '*'
+    post_install:
+      - pywalfox install
   - name: waybar
     hosts: '*'
   - name: woff2-font-awesome
