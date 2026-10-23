@@ -1,0 +1,9 @@
+ignore-empty-password
+show-failed-attempts
+
+indicator-radius=100
+indicator-thickness=10
+line-color=00000000
+
+font="Geist Mono"
+font-size=24

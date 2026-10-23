@@ -52,3 +52,10 @@ input_path = '~/.config/matugen/templates/waybar.css'
 output_path = '~/.config/waybar/colors.css'
 post_hook = 'pkill -SIGUSR2 -x waybar || true'
 
+[templates.fuzzel]
+input_path = '~/.config/matugen/templates/fuzzel.ini'
+output_path = '~/.config/fuzzel/colors.ini'
+
+[templates.swaylock]
+input_path = '~/.config/matugen/templates/swaylock.conf'
+output_path = '~/.config/swaylock/colors'

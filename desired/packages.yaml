@@ -126,3 +126,64 @@ packages:
     hosts: '*'
   - name: woff2-font-awesome
     hosts: '*'
+  - name: fuzzel
+    hosts: '*'
+  - name: bc
+    hosts: '*'
+  - name: handlr-regex
+    hosts: '*'
+  - name: noto-fonts-emoji
+    hosts: '*'
+  - name: bemoji
+    hosts: '*'
+    source: aur
+  - name: uv
+    hosts: '*'
+  - name: texlive-basic
+    hosts: '*'
+  - name: texlive-bibtexextra
+    hosts: '*'
+  - name: texlive-binextra
+    hosts: '*'
+  - name: texlive-context
+    hosts: '*'
+  - name: texlive-fontsextra
+    hosts: '*'
+  - name: texlive-fontsrecommended
+    hosts: '*'
+  - name: texlive-fontutils
+    hosts: '*'
+  - name: texlive-formatsextra
+    hosts: '*'
+  - name: texlive-games
+    hosts: '*'
+  - name: texlive-humanities
+    hosts: '*'
+  - name: texlive-latex
+    hosts: '*'
+  - name: texlive-latexextra
+    hosts: '*'
+  - name: texlive-latexrecommended
+    hosts: '*'
+  - name: texlive-luatex
+    hosts: '*'
+  - name: texlive-mathscience
+    hosts: '*'
+  - name: texlive-metapost
+    hosts: '*'
+  - name: texlive-music
+    hosts: '*'
+  - name: texlive-pictures
+    hosts: '*'
+  - name: texlive-plaingeneric
+    hosts: '*'
+  - name: texlive-pstricks
+    hosts: '*'
+  - name: texlive-publishers
+    hosts: '*'
+  - name: texlive-xetex
+    hosts: '*'
+  - name: swaylock
+    hosts: '*'
+  - name: clang
+    hosts: '*'

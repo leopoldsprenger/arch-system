@@ -154,9 +154,13 @@ source = [
 
 # --- Core ---
 "SUPER+r" = "spawn,sh -c 'mmsg dispatch reload_config && waybar --reload'"
-"SUPER+space" = "spawn,rofi -show drun"
-"SUPER+period" = "spawn,rofi -show emoji"
-"SUPER+equal" = "spawn,rofi -show calc"
+
+# Fuzzel
+"SUPER+space" = "spawn,fuzzel"
+"SUPER+period" = "spawn,bemoji -t"
+"SUPER+equal" = "spawn,~/.local/bin/fuzzel-calculator.sh"
+"SUPER+p" = "spawn,~/.local/bin/fuzzel-powermenu.sh"
+"SUPER+shift+f" = "spawn,~/.local/bin/fuzzel-files.sh"
 
 # Foot instead of Kitty
 "SUPER+q" = "killclient,"
@@ -172,8 +176,7 @@ source = [
 "SUPER+Shift+comma" = "spawn,wallpaper random"
 
 # Session
-"SUPER+p" = "spawn,powermenu"
-"SUPER+l" = "spawn,swaylock -f"
+"SUPER+l" = "spawn,swaylock --config ~/.config/swaylock/config --config ~/.config/swaylock/colors"
 
 # Utilities
 "SUPER+Shift+c" = "spawn,clipboard pick"
