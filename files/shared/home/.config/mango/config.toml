@@ -144,11 +144,9 @@ title_message_bar_gap = 20
 # --- Startup ---
 exec_once = awww-daemon
 exec_once = swaync
-exec_once = swayosd-server
 exec_once = waybar
 exec_once = wl-paste --type text --watch cliphist store
 exec_once = wl-paste --type image --watch cliphist store
-exec_once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_once = swayidle -w timeout 600 'swaylock --config ~/.config/swaylock/config --config ~/.config/swaylock/colors' before-sleep 'swaylock --config ~/.config/swaylock/config --config ~/.config/swaylock/colors'
 
 # --- Optional dynamic wallpaper colors ---
@@ -171,19 +169,16 @@ source = [
 "SUPER+m" = "spawn,~/.local/bin/fuzzel-wallpapers.sh"
 
 # Foot instead of Kitty
-"SUPER+q" = "killclient,"
+"SUPER+q" = "killclient"
 "SUPER+return" = "spawn,foot"
 "SUPER+b" = "spawn,firefox"
 "SUPER+e" = "spawn,foot -e yazi"
-"SUPER+Shift+e" = "spawn,foot -e yazi"
 
 # Session
 "SUPER+l" = "spawn,swaylock --config ~/.config/swaylock/config --config ~/.config/swaylock/colors"
 
 # Utilities
 "SUPER+Shift+c" = "spawn,clipboard pick"
-"SUPER+x" = "spawn,foot --app-id=float-tui -e nmtui"
-"SUPER+z" = "spawn,blueman-manager"
 "SUPER+c" = "spawn,swaync-client -t -sw"
 
 # Screenshots
@@ -220,30 +215,7 @@ source = [
 "SUPER+Shift+4" = "tag,4"
 "SUPER+Shift+5" = "tag,5"
 
-# --- Window states ---
-"ALT+Tab" = "togglejump,"
-"ALT+backslash" = "togglefloating,"
-"ALT+a" = "togglemaximizescreen,"
 "SUPER+f" = "togglefullscreen,"
-"ALT+Shift+f" = "togglefakefullscreen,"
-"SUPER+g" = "toggleglobal,"
-"ALT+z" = "toggle_scratchpad"
-
-# --- Scroller ---
-"ALT+e" = "set_proportion,1.0"
-"ALT+x" = "switch_proportion_preset,"
-"alt+super+ctrl+Left" = "scroller_stack,left"
-"alt+super+ctrl+Right" = "scroller_stack,right"
-"alt+super+ctrl+Up" = "scroller_stack,up"
-"alt+super+ctrl+Down" = "scroller_stack,down"
-
-# --- Dwindle ---
-"ALT+Shift+Return" = "dwindle_toggle_split_direction"
-
-# --- Gaps ---
-"ALT+Shift+x" = "incgaps,1"
-"ALT+Shift+z" = "incgaps,-1"
-"ALT+Shift+r" = "togglegaps"
 
 # --- Resize ---
 "CTRL+ALT+Up" = "resizewin,+0,-50"
@@ -277,7 +249,6 @@ source = [
 "none+left+4" = "viewnext_have_client"
 "none+up+4" = "enteroverview"
 "none+down+4" = "leaveoverview"
-
 
 # --- Window rules ---
 

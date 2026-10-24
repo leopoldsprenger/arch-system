@@ -219,3 +219,10 @@ packages:
     hosts: '*'
   - name: adobe-source-han-serif-jp-fonts
     hosts: '*'
+  - name: prettier
+    hosts: '*'
+  - name: stylua
+    hosts: '*'
+  - name: alejandra
+    hosts: '*'
+    source: aur

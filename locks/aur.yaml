@@ -1,5 +1,15 @@
 schema_version: 1
 packages:
+  - name: alejandra
+    version: 4.0.0-2
+    pkgbase: alejandra
+    commit: d7f3460ff832a7da59e52a4f80dc0e5016cd0221
+    pkgbuild_sha256: 71cf3f164a3c7370c80618fa0acb7223148ea69efb236d118f3aa6f2a2ec2e55
+    sources:
+      - alejandra-4.0.0.tar.gz::https://github.com/kamadorueda/alejandra/archive/refs/tags/4.0.0.tar.gz
+    checksums:
+      sha256sums:
+        - f3f9989c3fb6a56e2050bf5329692fae32a2b54be7c0652aa394afe4660ebb74
   - name: bemoji
     version: 0.4.0-1
     pkgbase: bemoji

@@ -226,3 +226,7 @@ files:
     hosts: '*'
     mode: "0644"
     conflict: backup
+  - source: files/shared/home/.config/nvim
+    destination: ~/.config/nvim
+    hosts: '*'
+    conflict: backup
