@@ -1,0 +1,6 @@
+[Behavior]
+ActiveByDefault=True
+ShareInputState=All
+ShowInputMethodInformation=True
+DisableInputMethodForPassword=True
+ord=True

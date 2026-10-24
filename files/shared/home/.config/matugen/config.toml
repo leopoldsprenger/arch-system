@@ -69,3 +69,11 @@ post_hook = 'tmux source-file /home/leo/.config/tmux/theme.conf 2>/dev/null; tmu
 input_path = '~/.config/matugen/templates/swaync.css'
 output_path = '~/.config/swaync/colors.css'
 post_hook = 'swaync-client -rs'
+
+[templates.gtk3]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+
+[templates.gtk4]
+input_path = '~/.config/matugen/templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'

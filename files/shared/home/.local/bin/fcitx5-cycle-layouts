@@ -1,0 +1,21 @@
+#!/bin/bash
+# ~/.local/bin/fcitx5-cycle-layouts
+
+STATE_FILE="$HOME/.config/fcitx5/.current_layout_state"
+
+# Read the last saved state; if empty, default to 0 (US)
+if [ ! -f "$STATE_FILE" ]; then
+    echo "0" > "$STATE_FILE"
+fi
+STATE=$(cat "$STATE_FILE")
+
+if [ "$STATE" == "0" ]; then
+    fcitx5-remote -s keyboard-de
+    echo "1" > "$STATE_FILE"
+elif [ "$STATE" == "1" ]; then
+    fcitx5-remote -s mozc
+    echo "2" > "$STATE_FILE"
+else
+    fcitx5-remote -s keyboard-us
+    echo "0" > "$STATE_FILE"
+fi

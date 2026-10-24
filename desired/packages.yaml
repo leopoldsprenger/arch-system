@@ -203,3 +203,19 @@ packages:
     hosts: '*'
   - name: swaync
     hosts: '*'
+  - name: adw-gtk-theme
+    hosts: '*'
+  - name: fcitx5
+    hosts: '*'
+  - name: fcitx5-configtool
+    hosts: '*'
+  - name: fcitx5-gtk
+    hosts: '*'
+  - name: fcitx5-mozc
+    hosts: '*'
+  - name: fcitx5-qt
+    hosts: '*'
+  - name: adobe-source-han-sans-jp-fonts
+    hosts: '*'
+  - name: adobe-source-han-serif-jp-fonts
+    hosts: '*'

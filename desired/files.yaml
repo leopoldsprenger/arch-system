@@ -181,3 +181,48 @@ files:
     hosts: '*'
     mode: "0644"
     conflict: backup
+  - source: files/shared/home/.config/gtk-3.0/gtk.css
+    destination: ~/.config/gtk-3.0/gtk.css
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/gtk-4.0/gtk.css
+    destination: ~/.config/gtk-4.0/gtk.css
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/gtk-4.0/settings.ini
+    destination: ~/.config/gtk-4.0/settings.ini
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.local/bin/fcitx5-cycle-layouts
+    destination: ~/.local/bin/fcitx5-cycle-layouts
+    hosts: '*'
+    mode: "0755"
+    conflict: backup
+  - source: files/shared/home/.config/fcitx5/profile
+    destination: ~/.config/fcitx5/profile
+    hosts: '*'
+    mode: "0600"
+    conflict: backup
+  - source: files/shared/home/.config/fcitx5/config
+    destination: ~/.config/fcitx5/config
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/fcitx5/conf/classicui.conf
+    destination: ~/.config/fcitx5/conf/classicui.conf
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/fontconfig/conf.d/99-japanese.conf
+    destination: ~/.config/fontconfig/conf.d/99-japanese.conf
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/fontconfig/fonts.conf
+    destination: ~/.config/fontconfig/fonts.conf
+    hosts: '*'
+    mode: "0644"
+    conflict: backup

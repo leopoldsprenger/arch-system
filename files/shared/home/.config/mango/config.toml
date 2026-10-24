@@ -1,5 +1,12 @@
 [global]
 
+# envs
+env = [
+"XMODIFIERS,@im=fcitx"
+"QT_IM_MODULE,wayland;fcitx"
+]
+
+
 # --- Input ---
 repeat_rate = 50
 repeat_delay = 300
@@ -244,9 +251,8 @@ source = [
 "CTRL+ALT+Left" = "resizewin,-50,+0"
 "CTRL+ALT+Right" = "resizewin,+50,+0"
 
-# --- Keyboard layout ---
-"SUPER+Shift+i" = "spawn,fcitx5-cycle-layouts"
-
+# --- Keyboard ---
+"SUPER+Shift+i" = "spawn,~/.local/bin/fcitx5-cycle-layouts"
 
 [mousebind.default]
 
