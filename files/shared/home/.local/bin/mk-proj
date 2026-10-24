@@ -3,6 +3,8 @@ set -e
 # --- Configuration ---
 PROJECTS_DIR="$HOME/projects"
 VALID_LANGUAGES=(python node typescript javascript rust c cpp empty)
+# ensure directories exist
+mkdir -p "$PROJECTS_DIR/prototypes" "$PROJECTS_DIR/research" "$PROJECTS_DIR/automation" "$PROJECTS_DIR/school" "$PROJECTS_DIR/products" "$PROJECTS_DIR/infrastructure" "$PROJECTS_DIR/competitions"
 # --- Helper Functions ---
 is_valid_language() {
     local lang="$1"

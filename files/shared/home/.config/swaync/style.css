@@ -1,0 +1,417 @@
+@import "colors.css";
+
+/* ── Palette ── */
+@define-color sn-accent     @primary;
+@define-color sn-on-accent  #0a0a0c;
+@define-color sn-text       @text_main;
+@define-color sn-muted      @outline;
+@define-color sn-bg         rgba(16, 16, 19, 0.97);
+@define-color sn-bg-deep    rgba(10, 10, 12, 0.98);
+@define-color sn-hover      rgba(255, 255, 255, 0.07);
+@define-color sn-subtle     rgba(255, 255, 255, 0.05);
+@define-color sn-border     rgba(255, 255, 255, 0.07);
+
+* {
+    font-family: "GeistMono Nerd Font", monospace;
+    font-size: 12px;
+    font-weight: 500;
+    outline: none;
+    min-height: 0;
+}
+
+/* ── Popups ── */
+notificationwindow,
+blankwindow,
+.blank-window,
+.floating-notifications {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.floating-notifications .notification-row {
+    margin: 4px 8px;
+    padding: 0;
+    outline: none;
+}
+
+.notification-row,
+.notification-background {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.floating-notifications .notification-background {
+    padding: 0;
+    margin: 0;
+}
+
+.notification {
+    background: @sn-bg;
+    color: @sn-text;
+    border: 1px solid @sn-border;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+}
+
+.notification-default-action {
+    background: transparent;
+    color: @sn-text;
+    padding: 10px 12px;
+    margin: 0;
+    border-radius: 10px;
+    box-shadow: none;
+    transition: background 0.15s ease;
+}
+
+.notification-default-action:hover {
+    background: @sn-hover;
+}
+
+.notification-default-action:not(:only-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.notification-content {
+    background: transparent;
+    padding: 0;
+}
+
+.notification-content .image {
+    -gtk-icon-size: 32px;
+    border-radius: 8px;
+    margin: 2px 10px 2px 0;
+}
+
+.notification-content .app-icon {
+    -gtk-icon-size: 16px;
+    margin: 4px;
+}
+
+.notification-content .summary,
+.notification-content .time,
+.notification-content .body {
+    background: transparent;
+    color: @sn-text;
+    text-shadow: none;
+}
+
+.notification-content .summary {
+    font-weight: 700;
+}
+
+.notification-content .time {
+    font-size: 10px;
+    font-weight: 400;
+    color: @sn-muted;
+    margin-right: 24px;
+}
+
+.notification-content .body {
+    font-weight: 400;
+    opacity: 0.8;
+}
+
+.notification-content progressbar,
+.notification-content .body-image,
+.notification-content .inline-reply {
+    margin-top: 6px;
+}
+
+.notification-content .body-image {
+    border-radius: 6px;
+}
+
+/* ── Close / actions ── */
+.close-button {
+    background: @sn-subtle;
+    color: @sn-text;
+    min-width: 18px;
+    min-height: 18px;
+    padding: 0;
+    margin: 8px 8px 0 0;
+    border-radius: 5px;
+    box-shadow: none;
+    transition: background 0.15s ease;
+}
+
+.close-button:hover {
+    background: @sn-hover;
+}
+
+.notification-action {
+    margin: 4px;
+    padding: 0;
+}
+
+.notification-action > button,
+.inline-reply-button {
+    background: @sn-subtle;
+    color: @sn-text;
+    border-radius: 6px;
+    padding: 5px 10px;
+    box-shadow: none;
+    transition: background 0.15s ease;
+}
+
+.notification-action > button:hover,
+.inline-reply-button:hover {
+    background: @sn-hover;
+}
+
+.inline-reply-entry {
+    background: @sn-bg-deep;
+    color: @sn-text;
+    caret-color: @sn-text;
+    border: 1px solid @sn-border;
+    border-radius: 6px;
+    padding: 5px 8px;
+}
+
+.inline-reply-button {
+    margin-left: 4px;
+}
+
+.inline-reply-button:disabled {
+    background: transparent;
+    color: @sn-muted;
+}
+
+/* ── Groups ── */
+.notification-group {
+    background: transparent;
+    transition: opacity 180ms ease;
+}
+
+.notification-group-headers,
+.notification-group-buttons {
+    margin: 0 10px;
+    color: @sn-text;
+}
+
+.notification-group-icon {
+    color: @sn-text;
+    -gtk-icon-size: 22px;
+}
+
+.notification-group-header {
+    color: @sn-text;
+    font-size: 11px;
+}
+
+.notification-group.collapsed.not-expanded {
+    opacity: 0.55;
+}
+
+.notification-group.collapsed .notification-row:not(:last-child) .notification-action,
+.notification-group.collapsed .notification-row:not(:last-child) .notification-default-action {
+    opacity: 0;
+}
+
+/* ── Control center ── */
+.control-center {
+    background: rgba(10, 10, 12, 0.94);
+    color: @sn-text;
+    border: 1px solid @sn-border;
+    border-radius: 12px;
+    padding: 6px;
+    box-shadow: none;
+}
+
+/* make every list layer transparent so the control center bg shows through */
+.control-center scrolledwindow,
+.control-center viewport,
+.control-center list,
+.control-center row,
+.control-center-list,
+.control-center-list .notification-row,
+.control-center-list .notification-background,
+.control-center-list .notification-group {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.control-center-list .notification-row {
+    margin: 4px 0;
+    padding: 0;
+}
+
+.control-center-list-placeholder {
+    background: transparent;
+    opacity: 0.4;
+}
+
+.widget {
+    margin: 4px;
+    padding: 6px;
+    color: @sn-text;
+    border-radius: 8px;
+}
+
+.widget-title > label {
+    font-size: 13px;
+    font-weight: 700;
+    margin-right: 6px;
+}
+
+.widget-title > button,
+.widget-inhibitors > button {
+    margin-left: 6px;
+    padding: 5px 10px;
+    background: @sn-subtle;
+    color: @sn-text;
+    border-radius: 6px;
+    box-shadow: none;
+}
+
+.widget-title > button:hover,
+.widget-inhibitors > button:hover {
+    background: @sn-hover;
+}
+
+.widget-dnd label,
+.widget-label > label {
+    color: @sn-text;
+}
+
+/* ── Do Not Disturb switch: rounded-square, white knob off, dark knob on ── */
+.widget-dnd > switch {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.10);
+    border: 1px solid @sn-border;
+    border-radius: 6px;
+    box-shadow: none;
+    padding: 0;
+    margin-left: 8px;
+    min-width: 40px;
+    min-height: 22px;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.widget-dnd > switch:checked {
+    background-image: none;
+    background-color: @sn-accent;
+    border-color: @sn-accent;
+}
+
+/* off: white knob */
+.widget-dnd > switch slider {
+    background-image: none;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    box-shadow: none;
+    min-width: 16px;
+    min-height: 16px;
+    margin: 2px;
+    transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* on: dark knob on accent track */
+.widget-dnd > switch:checked slider {
+    background-image: none;
+    background-color: @sn-on-accent;
+}
+
+.widget-dnd > switch:disabled {
+    opacity: 0.45;
+}
+
+/* ── Media player ── */
+.widget-mpris {
+    padding: 0;
+}
+
+.widget-mpris-player {
+    margin: 6px;
+    border-radius: 10px;
+}
+
+.mpris-background {
+    filter: blur(8px);
+}
+
+.mpris-overlay {
+    padding: 10px;
+    background: rgba(10, 10, 12, 0.65);
+    color: @sn-text;
+    border-radius: 10px;
+}
+
+.mpris-overlay button {
+    color: @sn-text;
+    border-radius: 6px;
+}
+
+.mpris-overlay button:hover {
+    background: @sn-hover;
+}
+
+.mpris-album-art {
+    border-radius: 8px;
+    -gtk-icon-size: 64px;
+}
+
+.widget-mpris-title {
+    font-weight: 700;
+}
+
+.widget-mpris-subtitle {
+    font-size: 11px;
+}
+
+/* ── Buttons grid / menubar ── */
+.widget-buttons-grid flowboxchild > button,
+.widget-menubar-container button {
+    background: @sn-subtle;
+    color: @sn-text;
+    border-radius: 6px;
+    padding: 8px;
+    box-shadow: none;
+    transition: background 0.15s ease;
+}
+
+.widget-buttons-grid flowboxchild > button:hover,
+.widget-menubar-container button:hover {
+    background: @sn-hover;
+}
+
+.widget-buttons-grid flowboxchild > button.toggle:checked {
+    background: @sn-accent;
+    color: @sn-on-accent;
+}
+
+.widget-menubar-container button {
+    margin: 0 3px;
+}
+
+/* ── Volume / sliders ── */
+.widget-volume row image {
+    -gtk-icon-size: 18px;
+}
+
+.per-app-volume {
+    background: @sn-bg;
+    margin: 6px 6px 0;
+    padding: 6px;
+    border-radius: 8px;
+}
+
+.widget-slider label {
+    color: @sn-text;
+}
+
+.widget-slider trough {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 4px;
+}
+
+.widget-slider highlight {
+    background: @sn-accent;
+    border-radius: 4px;
+}

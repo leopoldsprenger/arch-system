@@ -193,3 +193,13 @@ packages:
     hosts: '*'
   - name: openssh
     hosts: '*'
+  - name: grim
+    hosts: '*'
+  - name: libnotify
+    hosts: '*'
+  - name: slurp
+    hosts: '*'
+  - name: swayidle
+    hosts: '*'
+  - name: swaync
+    hosts: '*'

@@ -2,6 +2,9 @@
 
 PROJECTS_DIR="$HOME/projects"
 
+# ensure directories exist
+mkdir -p "$PROJECTS_DIR/prototypes" "$PROJECTS_DIR/research" "$PROJECTS_DIR/automation" "$PROJECTS_DIR/school" "$PROJECTS_DIR/products" "$PROJECTS_DIR/infrastructure" "$PROJECTS_DIR/competitions"
+
 SELECTION=$(find "$PROJECTS_DIR" -mindepth 2 -maxdepth 2 -type d \
     | grep -v '/\.' \
     | sed "s|^$PROJECTS_DIR/||" \

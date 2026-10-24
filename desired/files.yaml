@@ -95,11 +95,6 @@ files:
     hosts: '*'
     mode: "0644"
     conflict: backup
-  - source: files/shared/home/.config/mozilla/firefox/w1kv4706.default-release/user.js
-    destination: ~/.config/mozilla/firefox/w1kv4706.default-release/user.js
-    hosts: '*'
-    mode: "0644"
-    conflict: backup
   - source: files/shared/home/.config/matugen
     destination: ~/.config/matugen
     hosts: '*'
@@ -128,6 +123,8 @@ files:
   - source: files/shared/home/.config/waybar
     destination: ~/.config/waybar
     hosts: '*'
+    exclude:
+      - colors.css
     conflict: backup
   - source: files/shared/home/.config/fuzzel/fuzzel.ini
     destination: ~/.config/fuzzel/fuzzel.ini
@@ -149,10 +146,9 @@ files:
     hosts: '*'
     mode: "0755"
     conflict: backup
-  - source: files/hosts/macbook-vm/home/.config/mimeapps.list
+  - source: files/shared/home/.config/mimeapps.list
     destination: ~/.config/mimeapps.list
-    hosts:
-      - macbook-vm
+    hosts: '*'
     mode: "0644"
     conflict: backup
   - source: files/shared/home/.config/swaylock/config
@@ -169,4 +165,19 @@ files:
     destination: ~/.local/bin/fuzzel-wallpapers.sh
     hosts: '*'
     mode: "0755"
+    conflict: backup
+  - source: files/shared/home/.local/shared/dbus-1/services/org.freedesktop.Notifications.service
+    destination: ~/.local/shared/dbus-1/services/org.freedesktop.Notifications.service
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/swaync/config.json
+    destination: ~/.config/swaync/config.json
+    hosts: '*'
+    mode: "0644"
+    conflict: backup
+  - source: files/shared/home/.config/swaync/style.css
+    destination: ~/.config/swaync/style.css
+    hosts: '*'
+    mode: "0644"
     conflict: backup

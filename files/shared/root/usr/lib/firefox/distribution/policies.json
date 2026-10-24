@@ -23,31 +23,20 @@
         "installation_mode": "force_installed"
       }
     },
-    "SearchEngines": {
-      "Add": [
-        {
-          "Name": "ddg",
-          "Alias": "@ddg",
-          "URLTemplate": "https://duckduckgo.com/?q={searchTerms}&type=disableaibro",
-          "Method": "GET"
-        }
-      ],
-      "Default": "ddg"
-    },
     "Bookmarks": [
       {
         "Title": "HPI Slack",
-        "URL": "https://hpi.enterprise.slack.com/",
+        "URL": "https://slack.com",
         "Placement": "toolbar"
       },
       {
         "Title": "GitHub",
-        "URL": "https://github.com/",
+        "URL": "https://github.com",
         "Placement": "toolbar"
       },
       {
         "Title": "HPI GitLab",
-        "URL": "https://gitlab.hpi.de/",
+        "URL": "https://hpi.de",
         "Placement": "toolbar"
       }
     ],
@@ -74,6 +63,61 @@
       },
       "extensions.activeThemeID": {
         "Value": "firefox-compact-dark@mozilla.org",
+        "Status": "locked",
+        "Type": "string"
+      },
+      "extensions.autoDisableScopes": {
+        "Value": 0,
+        "Status": "locked",
+        "Type": "number"
+      },
+      "browser.toolbars.bookmarks.visibility": {
+        "Value": "never",
+        "Status": "locked",
+        "Type": "string"
+      },
+      "browser.tabs.groups.enabled": {
+        "Value": false,
+        "Status": "locked",
+        "Type": "boolean"
+      },
+      "browser.newtabpage.activity-stream.feeds.topsites": {
+        "Value": false,
+        "Status": "locked",
+        "Type": "boolean"
+      },
+      "browser.newtabpage.activity-stream.showWeather": {
+        "Value": false,
+        "Status": "locked",
+        "Type": "boolean"
+      },
+      "sidebar.verticalTabs": {
+        "Value": true,
+        "Status": "locked",
+        "Type": "boolean"
+      },
+      "sidebar.visibility": {
+        "Value": "always",
+        "Status": "locked",
+        "Type": "string"
+      },
+      "sidebar.revamp": {
+        "Value": true,
+        "Status": "locked",
+        "Type": "boolean"
+      },
+      "browser.tabs.inTitlebar": {
+        "Value": 1,
+        "Status": "locked",
+        "Type": "number"
+      },
+      "browser.search.defaultenginename": {
+        "Value": "ddg",
+        "Status": "locked",
+        "Type": "string"
+      },
+      "browser.uiCustomization.state": {
+        "Value": "{\"placements\":{\"widget-overflow-fixed-list\":[],\"nav-bar\":[\"back-button\",\"forward-button\",\"urlbar-container\"],\"toolbar-menubar\":[\"menubar-items\"],\"TabsToolbar\":[],\"PersonalToolbar\":[]},\"seen\":[],\"dirtyAreaCache\":[\"nav-bar\",\"TabsToolbar\",\"PersonalToolbar\"],\"currentVersion\":20,\"newElementCount\":0}",
         "Status": "locked",
         "Type": "string"
       }

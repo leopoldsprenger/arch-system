@@ -142,7 +142,7 @@ exec_once = waybar
 exec_once = wl-paste --type text --watch cliphist store
 exec_once = wl-paste --type image --watch cliphist store
 exec_once = /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
-exec_once = swayidle -w timeout 600 'swaylock -f' before-sleep 'swaylock -f'
+exec_once = swayidle -w timeout 600 'swaylock --config ~/.config/swaylock/config --config ~/.config/swaylock/colors' before-sleep 'swaylock --config ~/.config/swaylock/config --config ~/.config/swaylock/colors'
 
 # --- Optional dynamic wallpaper colors ---
 source = [
@@ -153,7 +153,7 @@ source = [
 [bind.default]
 
 # --- Core ---
-"SUPER+r" = "spawn,sh -c 'mmsg dispatch reload_config && waybar --reload'"
+"SUPER+Shift+w" = "spawn,sh -c 'mmsg dispatch reload_config && waybar --reload'"
 
 # Fuzzel
 "SUPER+space" = "spawn,fuzzel"
@@ -180,8 +180,8 @@ source = [
 "SUPER+c" = "spawn,swaync-client -t -sw"
 
 # Screenshots
-"SUPER+Shift+r" = "spawn,screenshot full"
-"SUPER+Ctrl+r" = "spawn,screenshot region"
+"SUPER+Shift+r" = "spawn,~/.local/bin/screenshot full"
+"SUPER+r" = "spawn,~/.local/bin/screenshot"
 
 # --- Window navigation ---
 "SUPER+Left" = "focusdir,left"
