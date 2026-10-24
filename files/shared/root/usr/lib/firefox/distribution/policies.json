@@ -36,23 +36,47 @@
     },
     "Bookmarks": [
       {
-        "toplevel_name": "Bookmarks Toolbar"
+        "Title": "HPI Slack",
+        "URL": "https://hpi.enterprise.slack.com/",
+        "Placement": "toolbar"
       },
       {
-        "name": "HPI Slack",
-        "url": "https://hpi.enterprise.slack.com/",
-        "placement": "toolbar"
+        "Title": "GitHub",
+        "URL": "https://github.com/",
+        "Placement": "toolbar"
       },
       {
-        "name": "GitHub",
-        "url": "https://github.com/",
-        "placement": "toolbar"
-      },
-      {
-        "name": "HPI GitLab",
-        "url": "https://gitlab.hpi.de/",
-        "placement": "toolbar"
+        "Title": "HPI GitLab",
+        "URL": "https://gitlab.hpi.de/",
+        "Placement": "toolbar"
       }
-    ]
+    ],
+    "Preferences": {
+      "ui.systemUsesDarkTheme": {
+        "Value": 1,
+        "Status": "locked",
+        "Type": "number"
+      },
+      "browser.theme.toolbar-theme": {
+        "Value": 0,
+        "Status": "locked",
+        "Type": "number"
+      },
+      "browser.theme.content-theme": {
+        "Value": 0,
+        "Status": "locked",
+        "Type": "number"
+      },
+      "layout.css.prefers-color-scheme.content-override": {
+        "Value": 0,
+        "Status": "locked",
+        "Type": "number"
+      },
+      "extensions.activeThemeID": {
+        "Value": "firefox-compact-dark@mozilla.org",
+        "Status": "locked",
+        "Type": "string"
+      }
+    }
   }
 }
