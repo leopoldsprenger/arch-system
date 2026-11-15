@@ -6,7 +6,8 @@ return {
 		build = ":TSUpdate",
 
 		config = function()
-			require("nvim-treesitter").install({
+			local ts = require("nvim-treesitter")
+			local parsers = {
 				"bash",
 				"c",
 				"cpp",
@@ -21,31 +22,24 @@ return {
 				"css",
 				"javascript",
 				"typescript",
-			})
+			}
 
-			-- Enable Tree-sitter highlighting for supported buffers.
+			ts.install(parsers)
+
 			vim.api.nvim_create_autocmd("FileType", {
-				pattern = {
-					"bash",
-					"c",
-					"cpp",
-					"lua",
-					"latex",
-					"nix",
-					"python",
-					"rust",
-					"vim",
-					"vimdoc",
-					"html",
-					"css",
-					"javascript",
-					"typescript",
-				},
 				callback = function(args)
-					local ok = pcall(vim.treesitter.start, args.buf)
-					if not ok then
-						-- Parser may not be installed yet.
+					local ft = vim.bo[args.buf].filetype
+					local lang = vim.treesitter.language.get_lang(ft) or ft
+
+					if pcall(vim.treesitter.start, args.buf, lang) then
 						return
+					end
+
+					local available = require("nvim-treesitter.parsers")
+					if available[lang] then
+						ts.install({ lang }):await(function()
+							pcall(vim.treesitter.start, args.buf, lang)
+						end)
 					end
 				end,
 			})
